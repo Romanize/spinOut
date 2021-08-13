@@ -121,11 +121,12 @@ img {
 }
 
 .bg-image--inicio {
-  background-image: url(../img/inicio.png);
+  background-image: url(../images/background/fondoInicio.jpg);
+  filter: grayscale();
 }
 
 .bg-image--proposito {
-  background-image: url(../img/proposito.png);
+  background-image: url(../images/background/fondoProposito.jpg);
 }
 
 .gradient {
