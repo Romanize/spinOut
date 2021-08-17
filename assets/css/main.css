@@ -242,8 +242,14 @@ img {
         border-top: 2px solid rgba(255, 193, 7, 1);
         width: 1152px;
     }
-    .container-2 {
+    .container-xxl {
         width: 1152px;
         margin-left: 14.4rem;
+    }
+    .container-fluid {
+        height: 7168px;
+    }
+    .w-50--xl {
+        width: 305px!important;
     }
 }
