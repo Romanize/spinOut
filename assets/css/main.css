@@ -251,6 +251,10 @@ h3 {
   font-weight: normal;
 }
 
+.carousel-tarjetas {
+  display: flex;
+}
+
 .persona-tarjeta {
   border-radius: 10px;
   border: solid 1px var(--color-yellow);
