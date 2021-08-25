@@ -239,6 +239,7 @@ h3 {
 .carousel-spinouters {
   margin-top: 2rem;
 }
+
 .select-spinouters {
   display: flex;
   justify-content: space-between;
@@ -288,6 +289,122 @@ h3 {
   content: '"';
   font-size: 1.5rem;
   font-style: italic;
+}
+
+/*SECCION MODELO*/
+
+.bloque-alepso {
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: grayscale();
+  background-size: cover;
+  width: 237px;
+  height: 240px;
+}
+
+.bloque-alepso--a {
+  background-image: url(../images/alepso/A.jpg);
+}
+
+.bloque-alepso--l {
+  background-image: url(../images/alepso/L.jpg);
+}
+
+.bloque-alepso--e {
+  background-image: url(../images/alepso/E.jpg);
+}
+
+.bloque-alepso--p {
+  background-image: url(../images/alepso/P.jpg);
+}
+
+.bloque-alepso--s {
+  background-image: url(../images/alepso/SO.jpg);
+  background-size: 200%;
+  background-position: left center;
+}
+
+.bloque-alepso--o {
+  background-image: url(../images/alepso/SO.jpg);
+  background-size: 200%;
+  background-position: right center;
+}
+
+.bloque-alepso h4 {
+  font-size: 12rem;
+  font-weight: 700;
+}
+
+.tarjeta-carousel-modelo {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: var(--color-yellow);
+  margin-top: 7rem;
+}
+
+.tarjeta-carousel-modelo img {
+  width: 460px;
+  border-radius: 3rem;
+  padding: 2rem;
+}
+
+.tarjeta-carousel-modelo p {
+  font-size: 2rem;
+}
+
+.tarjeta-carousel-modelo h4 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.tarjeta-carousel-modelo a p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin-right: 5rem;
+}
+
+/* SECCION IMPACTO */
+
+#impacto {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 1)
+    ),
+    url(../images/background/fondoImpacto.png);
+}
+
+.numero-contador-header {
+  font-size: 16.7rem;
+  font-weight: 400;
+}
+
+.span-contador-header {
+  font-variant: small-caps;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.numero-contador-header--chico {
+  font-size: 5.35rem;
+}
+
+.span-contador-header--chico {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.tarjeta-impacto p {
+  font-size: 8rem;
+}
+
+.tarjeta-impacto p legend {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 @media (min-width: 992px) {
