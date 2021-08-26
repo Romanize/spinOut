@@ -41,10 +41,6 @@ body {
   line-height: 1.5;
 }
 
-.seccion {
-  height: 100vh;
-}
-
 .seccion-titulo {
   font-size: 60px;
   font-weight: 700;
@@ -63,17 +59,30 @@ body {
   width: 8rem;
   background-color: var(--color-yellow);
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .seccion {
+  height: 100vh;
+  overflow: hidden;
   padding: 3rem 0 2rem 0;
   border-top: 1px solid var(--color-yellow);
   border-bottom: 1px solid var(--color-yellow);
 }
 
+.seccion--borderless {
+  height: 100vh;
+  overflow: hidden;
+  padding: 3rem 0 2rem 0;
+}
+
 .seccion-texto {
   /*maybe P selector*/
   font-size: 1.5rem;
+}
+
+.seccion-subtitulo {
+  font-size: 2rem;
 }
 
 .small-text {
@@ -158,41 +167,29 @@ h3 {
   background-image: url(../images/background/fondoInicio.png);
 }
 
-.bg-image--proposito {
-  background-image: url(../images/background/fondoProposito.png);
-}
-
-.gradient {
-  background: linear-gradient(
-    360deg,
-    #000000 5.18%,
-    rgba(0, 0, 0, 0.47) 50.83%,
-    #000000 98.47%
-  );
-  height: auto;
-  width: 100%;
-}
-
-.gradient p {
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-
-.inicio .gradient h6 {
-  font-size: 0.8rem;
-}
-
-.gradient a {
-  font-size: 1.4rem;
+.seccion--main {
+  height: 75vh;
 }
 
 /* SECCION PROPOSITO */
+#proposito {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 1)
+    ),
+    url(../images/background/fondoProposito.png);
+}
 
+.seccion-bordeada {
+  border: solid 3px var(--color-yellow);
+  height: 100%;
+  border-radius: 10px;
+  padding: 3rem;
+}
 .logo-mascota {
-  right: 0;
-  margin-right: 7rem;
-  width: 40%;
-  top: 15rem;
+  height: 300px;
 }
 
 /* SECCION COMUNIDAD */
@@ -454,9 +451,6 @@ h3 {
     margin-bottom: 7.3rem;
   }
   .bg-image,
-  .gradient {
-    height: 580px;
-  }
   h1 {
     font-size: 7.2rem;
     letter-spacing: -3px;
@@ -472,11 +466,6 @@ h3 {
     border-top: 12px solid rgba(255, 193, 7, 1);
     width: 96px;
   }
-  .gradient p {
-    font-size: 2.8rem;
-    margin-top: 3.5rem;
-    margin-right: 41rem;
-  }
   .btn {
     width: 240px;
     height: 72px;
@@ -487,13 +476,7 @@ h3 {
   .btn--conoceMas {
     width: 302px;
   }
-  .inicio span {
-    font-size: 2.8rem;
-  }
-  .inicio .gradient h6 {
-    font-size: 1.4rem;
-    text-align: left;
-  }
+
   .separator {
     border-top: 2px solid rgba(255, 193, 7, 1);
     width: 1152px;
