@@ -393,6 +393,54 @@ h3 {
     font-weight: 500;
 }
 
+
+/* SECCION SEDES */
+
+#sedes {
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(../images/background/fondoSedes.png);
+}
+
+.tarjeta-carousel-modelo--sedes {
+    max-width: 37%;
+    margin-top: 0;
+}
+
+.yellow-block--black {
+    background-color: #000000;
+}
+
+.seccion-titulo--sedes {
+    font-size: 4rem;
+}
+
+.lista-actividades {
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.boton-actividades {
+    font-size: 2.5rem;
+    width: 80%!important;
+    border-radius: 5px;
+}
+
+.persona-texto--sedes {
+    font-size: 1.17rem;
+}
+
+.persona-tarjeta h5 {
+    font-size: 1.18rem;
+}
+
+.persona-tarjeta--aliados {
+    height: 430px;
+    width: 270px;
+}
+
+.contenedor-aliados {
+    margin-top: 17rem;
+}
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         margin-right: 3.4rem;
