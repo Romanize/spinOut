@@ -21,12 +21,8 @@ body {
   text-decoration: underline;
 }
 
-.bg-dark-intense {
+.bg-black {
   background-color: #000000;
-}
-
-.bg-dark-button {
-  background-color: rgba(0, 0, 0, 1);
 }
 
 .text-black {
@@ -127,29 +123,40 @@ h3 {
 /*SECCION INICIO*/
 
 .text-slider__mindsets {
-  color: rgba(255, 193, 7, 1);
+  color: var(--color-yellow);
   font-size: 1.4rem;
 }
 
 .text-slider__phrase {
   font-size: 1.8rem;
-  color: rgba(255, 193, 7, 1);
+  color: var(--color-yellow);
 }
 
-.separator {
-  border-top: 1px solid rgba(255, 193, 7, 1);
-  height: 2px;
-  max-width: 90%;
-  padding: 0;
-  margin: 2rem auto 0 auto;
+.btn--yellow {
+  background-color: var(--color-yellow);
+  color: black;
+  border: 2px dashed var(--color-yellow);
+  transition: all 0.3s ease-in;
 }
 
-.separator--short {
-  border-top: 4px solid rgba(255, 193, 7, 1);
-  height: 2px;
-  max-width: 20%;
-  padding: 0;
-  margin: 2rem 0;
+.btn--yellow:hover {
+  background-color: black;
+  color: var(--color-yellow);
+  border: 2px dashed var(--color-yellow);
+  text-decoration: underline var(--color-yellow);
+}
+
+.btn--dark {
+  background-color: black;
+  color: var(--color-yellow);
+  border: 2px solid var(--color-yellow);
+  transition: all 0.3s ease-in;
+}
+
+.btn--dark:hover {
+  border: 2px dashed white;
+  color: white;
+  text-decoration: underline white;
 }
 
 .bg-image {
@@ -249,14 +256,23 @@ h3 {
 
 .carousel-tarjetas {
   display: flex;
+  overflow: auto;
+}
+
+.carousel-tarjetas::-webkit-scrollbar {
+  height: 0;
+  width: 0;
 }
 
 .persona-tarjeta {
   border-radius: 10px;
-  border: solid 1px var(--color-yellow);
+  border: solid 3px var(--color-yellow);
   margin-right: 1rem;
-  width: 250px;
+  width: 270px;
   padding: 1rem 0.5rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .persona-imagen {
@@ -268,10 +284,16 @@ h3 {
 
 .persona-imagen > img {
   width: 120px;
+  height: 120px;
+  object-fit: cover;
 }
 
 .persona-tarjeta a {
   color: var(--color-yellow);
+}
+
+.persona-texto {
+  flex-grow: 1;
 }
 
 .persona-texto::before {
@@ -289,12 +311,16 @@ h3 {
 /*SECCION MODELO*/
 
 .bloque-alepso {
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   filter: grayscale();
   background-size: cover;
   width: 237px;
   height: 240px;
+}
+
+.bloque-alepso:hover {
+  filter: none;
 }
 
 .bloque-alepso--a {
@@ -313,21 +339,31 @@ h3 {
   background-image: url(../images/alepso/P.jpg);
 }
 
-.bloque-alepso--s {
+.bloque--so-wrapper {
+  width: 474px;
+  height: 240px;
+  background-color: red;
+  justify-content: space-around;
+  align-items: center;
+  filter: grayscale();
   background-image: url(../images/alepso/SO.jpg);
-  background-size: 200%;
-  background-position: left center;
+  background-size: cover;
+  background-position: center;
 }
 
-.bloque-alepso--o {
-  background-image: url(../images/alepso/SO.jpg);
-  background-size: 200%;
-  background-position: right center;
+.bloque--so-wrapper:hover {
+  filter: none;
 }
 
-.bloque-alepso h4 {
+.bloque-alepso h4,
+.bloque--so-wrapper h4 {
   font-size: 12rem;
   font-weight: 700;
+}
+
+.carousel-modelo {
+  display: flex;
+  overflow: hidden;
 }
 
 .tarjeta-carousel-modelo {
@@ -336,6 +372,8 @@ h3 {
   width: 100%;
   background-color: var(--color-yellow);
   margin-top: 7rem;
+  flex-shrink: 0;
+  margin-right: 200px;
 }
 
 .tarjeta-carousel-modelo img {
@@ -393,11 +431,16 @@ h3 {
   font-weight: 500;
 }
 
-.tarjeta-impacto p {
+.tarjeta-flex {
+  background-color: var(--color-yellow);
+  border-radius: 1rem;
+}
+
+.tarjeta-flex p {
   font-size: 8rem;
 }
 
-.tarjeta-impacto p legend {
+.tarjeta-flex p legend {
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -537,3 +580,5 @@ h3 {
     margin-left: 14.4rem;
   }
 }
+
+/* Styling CSS */

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO -- GOOGLE FONTS INCLUTION -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap"
       rel="stylesheet"
@@ -26,14 +27,20 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/main.js" defer></script>
     <title>SpinOut</title>
   </head>
 
   <body>
-    <div class="bg-dark-intense">
+    <div class="bg-black">
       <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark-intense">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand pt-4 pb-4" href="#">
             <img src="assets/images/logo.png" alt="logo" />
           </a>
@@ -95,6 +102,7 @@
               p-2
               line-height
             "
+            id="mindsets"
           >
             "Tus capacidades sólo se valoran por tus acciones tangibles"
           </p>
@@ -113,9 +121,8 @@
               <a
                 href="#"
                 class="
-                  btn
+                  btn btn--yellow
                   text-underline
-                  bg-warning
                   font-weight-bolder
                   text-black
                   p-3
@@ -127,14 +134,7 @@
             <div>
               <a
                 href="#"
-                class="
-                  btn--conoceMas btn
-                  text-underline text-warning
-                  bg-dark-button
-                  font-weight-bolder
-                  p-3
-                  border-warning
-                "
+                class="btn text-underline btn--dark font-weight-bolder p-3"
                 >Conoce mas aquí</a
               >
               <h6 class="text-white text-center mt-3">
@@ -231,14 +231,17 @@
             </p>
             <div class="carousel-spinouters text-yellow">
               <div class="select-spinouters">
-                <span><i class="fas fa-chevron-left"></i></span>
+                <span><i class="fas fa-chevron-left carousel-left"></i></span>
                 <h3 style="font-weight: 600">SpinOuters destacados</h3>
-                <span><i class="fas fa-chevron-right"></i></span>
+                <span><i class="fas fa-chevron-right carousel-right"></i></span>
               </div>
               <div class="carousel-tarjetas text-center">
                 <div class="persona-tarjeta">
                   <div class="persona-imagen">
-                    <img src="assets/images/people/Viviana.jpg" alt="Viviana" />
+                    <img
+                      src="assets/images/people/Viviana_card.jpg"
+                      alt="Viviana"
+                    />
                   </div>
                   <p class="persona-texto">
                     Spinout es un espacio donde recargarse de energías y
@@ -247,6 +250,106 @@
                   </p>
                   <h4>Viviana</h4>
                   <a href="https://www.linkedin.com/in/vivianara/">Linkedin</a>
+                </div>
+                <div class="persona-tarjeta">
+                  <div class="persona-imagen">
+                    <img
+                      src="assets/images/people/Jaime_card.jpeg"
+                      alt="Jaime"
+                    />
+                  </div>
+                  <p class="persona-texto">
+                    La comunidad promueve pensamientos que le permiten crecer a
+                    uno mismo tanto a nivel profesional como personal
+                  </p>
+                  <h4>Jaime</h4>
+                  <a href="https://www.linkedin.com/in/jalexaltamirano/"
+                    >Linkedin</a
+                  >
+                </div>
+                <div class="persona-tarjeta">
+                  <div class="persona-imagen">
+                    <img
+                      src="assets/images/people/Pamela_card.png"
+                      alt="Pamela"
+                    />
+                  </div>
+                  <p class="persona-texto">
+                    He conocido a grandiosas personas con mi misma forma loca de
+                    pensar, que buscan salir de su zona de confort y han
+                    confiado en mí para asumir nuevos retos
+                  </p>
+                  <h4>Pamela</h4>
+                  <a
+                    href="https://www.linkedin.com/in/pamela-anchapuri-zapana-5b85aa18b/"
+                    >Linkedin</a
+                  >
+                </div>
+                <div class="persona-tarjeta">
+                  <div class="persona-imagen">
+                    <img
+                      src="assets/images/people/Alexander_card.jpeg"
+                      alt="Alexander"
+                    />
+                  </div>
+                  <p class="persona-texto">
+                    La comunidad sin duda me ha sacado de mi status quo y ha
+                    ampliado mi visión
+                  </p>
+                  <h4>Alexander</h4>
+                  <a
+                    href="https://www.linkedin.com/in/jos%C3%A9-alexander-caballero-a00570186/"
+                    >Linkedin</a
+                  >
+                </div>
+                <div class="persona-tarjeta">
+                  <div class="persona-imagen">
+                    <img
+                      src="assets/images/people/Piero_card.jpg"
+                      alt="Piero"
+                    />
+                  </div>
+                  <p class="persona-texto">
+                    Creo que sin SpinOut no hubiera podido empezar nuevos
+                    proyectos y emprendimientos en los que ahora estoy,
+                    simplemente son increíbles.
+                  </p>
+                  <h4>Piero</h4>
+                  <a href="https://www.linkedin.com/in/pierogavelanterry/"
+                    >Linkedin</a
+                  >
+                </div>
+                <div class="persona-tarjeta">
+                  <div class="persona-imagen">
+                    <img
+                      src="assets/images/people/Lourdes_card.jpg"
+                      alt="Lourdes"
+                    />
+                  </div>
+                  <p class="persona-texto">
+                    La gente es chevere, buena e interesante. Todos son jóvenes
+                    que quieren cambiar el mundo
+                  </p>
+                  <h4>Lourdes</h4>
+                  <a
+                    href="https://www.linkedin.com/in/lourdes-morales-417555155/"
+                    >Linkedin</a
+                  >
+                </div>
+                <div class="persona-tarjeta">
+                  <div class="persona-imagen">
+                    <img src="assets/images/people/Sol_card.jpeg" alt="Sol" />
+                  </div>
+                  <p class="persona-texto">
+                    La gente de SpinOut no te va a juzgar, es muy empática,
+                    generosa y de compartir conocimiento. Saben que el logro de
+                    uno es el logro de todos
+                  </p>
+                  <h4>Sol</h4>
+                  <a
+                    href="https://www.linkedin.com/in/sol-marquezado-8653a51a6/"
+                    >Linkedin</a
+                  >
                 </div>
               </div>
             </div>
@@ -263,13 +366,13 @@
             <span class="yellow-block"></span>
           </div>
           <div class="seccion-contenido">
-            <div class="contenido-alepso d-xl-flex justify-content-xl-between">
+            <div class="contenido-alepso d-flex">
               <div
                 class="
                   bloque-alepso bloque-alepso--a
-                  d-xl-flex
-                  justify-content-xl-center
-                  align-items-xl-center
+                  d-flex
+                  justify-content-center
+                  align-items-center
                 "
               >
                 <h4>A</h4>
@@ -277,9 +380,9 @@
               <div
                 class="
                   bloque-alepso bloque-alepso--l
-                  d-xl-flex
-                  justify-content-xl-center
-                  align-items-xl-center
+                  d-flex
+                  justify-content-center
+                  align-items-center
                 "
               >
                 <h4>L</h4>
@@ -287,9 +390,9 @@
               <div
                 class="
                   bloque-alepso bloque-alepso--e
-                  d-xl-flex
-                  justify-content-xl-center
-                  align-items-xl-center
+                  d-flex
+                  justify-content-center
+                  align-items-center
                 "
               >
                 <h4>E</h4>
@@ -297,42 +400,22 @@
               <div
                 class="
                   bloque-alepso bloque-alepso--p
-                  d-xl-flex
-                  justify-content-xl-center
-                  align-items-xl-center
+                  d-flex
+                  justify-content-center
+                  align-items-center
                 "
               >
                 <h4>P</h4>
               </div>
-              <div
-                class="
-                  bloque-alepso bloque-alepso--s
-                  d-xl-flex
-                  justify-content-xl-center
-                  align-items-xl-center
-                "
-              >
+              <div class="bloque--so-wrapper d-flex">
                 <h4>S</h4>
-              </div>
-              <div
-                class="
-                  bloque-alepso bloque-alepso--o
-                  d-xl-flex
-                  justify-content-xl-center
-                  align-items-xl-center
-                "
-              >
                 <h4>O</h4>
               </div>
             </div>
+          </div>
+          <div class="carousel-modelo">
             <div
-              class="
-                tarjeta-carousel-modelo
-                text-black
-                d-xl-flex
-                align-items-xl-end
-                row
-              "
+              class="tarjeta-carousel-modelo text-black d-flex align-items-end"
             >
               <div class="col-xl-6 text-center">
                 <img src="assets/images/carousel/1.jpg" alt="imagen1-modelo" />
@@ -360,14 +443,7 @@
               </div>
             </div>
             <div
-              class="
-                tarjeta-carousel-modelo
-                text-black
-                d-xl-flex
-                align-items-xl-end
-                row
-              "
-              style="display: none !important"
+              class="tarjeta-carousel-modelo text-black d-flex align-items-end"
             >
               <div class="col-xl-6 text-center">
                 <img
@@ -400,14 +476,7 @@
               </div>
             </div>
             <div
-              class="
-                tarjeta-carousel-modelo
-                text-black
-                d-xl-flex
-                align-items-xl-end
-                row
-              "
-              style="display: none !important"
+              class="tarjeta-carousel-modelo text-black d-flex align-items-end"
             >
               <div class="col-xl-6 text-center">
                 <img src="assets/images/carousel/3.jpg" alt="imagen3-modelo" />
@@ -436,14 +505,7 @@
               </div>
             </div>
             <div
-              class="
-                tarjeta-carousel-modelo
-                text-black
-                d-xl-flex
-                align-items-xl-end
-                row
-              "
-              style="display: none !important"
+              class="tarjeta-carousel-modelo text-black d-flex align-items-end"
             >
               <div class="col-xl-6 text-center">
                 <img src="assets/images/carousel/4.jpg" alt="imagen4-modelo" />
@@ -471,14 +533,7 @@
               </div>
             </div>
             <div
-              class="
-                tarjeta-carousel-modelo
-                text-black
-                d-xl-flex
-                align-items-xl-end
-                row
-              "
-              style="display: none !important"
+              class="tarjeta-carousel-modelo text-black d-flex align-items-end"
             >
               <div class="col-xl-6 text-center">
                 <img src="assets/images/carousel/5.jpg" alt="imagen5-modelo" />
@@ -518,86 +573,80 @@
             <h2 class="seccion-titulo">Impacto</h2>
             <span class="yellow-block"></span>
           </div>
-          <div class="seccion-contenido row">
-            <div
-              class="d-xl-flex align-items-xl-center flex-xl-column col-xl-8"
-            >
-              <div
-                class="
-                  d-xl-flex
-                  text-yellow
-                  align-items-xl-center
-                  justify-content-xl-center
-                "
-              >
-                <p class="numero-contador-header">420</p>
-                <span class="span-contador-header ml-xl-5 p-xl-3"
-                  >SpinOuters<br />activos<br />actualmente</span
+          <div class="seccion-contenido container">
+            <div class="row">
+              <div class="d-flex align-items-center flex-column col-8">
+                <div
+                  class="
+                    d-xl-flex
+                    text-yellow
+                    align-items-xl-center
+                    justify-content-xl-center
+                  "
                 >
+                  <p class="numero-contador-header">420</p>
+                  <span class="span-contador-header ml-xl-5 p-xl-3"
+                    >SpinOuters<br />activos<br />actualmente</span
+                  >
+                </div>
+                <div class="align-items-xl-center d-xl-flex flex-xl-column">
+                  <div class="text-yellow d-xl-flex align-items-xl-center">
+                    <p class="numero-contador-header--chico">104</p>
+                    <span
+                      class="text-uppercase span-contador-header--chico ml-xl-5"
+                      >awareness</span
+                    >
+                  </div>
+                  <div class="text-yellow d-flex align-items-xl-center">
+                    <p class="numero-contador-header--chico">148</p>
+                    <span
+                      class="text-uppercase span-contador-header--chico ml-xl-5"
+                      >learning</span
+                    >
+                  </div>
+                  <div class="text-yellow d-flex align-items-xl-center">
+                    <p class="numero-contador-header--chico">112</p>
+                    <span
+                      class="text-uppercase span-contador-header--chico ml-xl-5"
+                      >experiment</span
+                    >
+                  </div>
+                  <div class="text-yellow d-flex align-items-xl-center">
+                    <p class="numero-contador-header--chico">76</p>
+                    <span
+                      class="text-uppercase span-contador-header--chico ml-xl-5"
+                      >pursue</span
+                    >
+                  </div>
+                  <div class="text-yellow d-xl-flex align-items-xl-center">
+                    <p class="numero-contador-header--chico">16</p>
+                    <span
+                      class="text-uppercase span-contador-header--chico ml-xl-5"
+                      >spinout</span
+                    >
+                  </div>
+                </div>
               </div>
-              <div class="align-items-xl-center d-xl-flex flex-xl-column">
-                <div class="text-yellow d-xl-flex align-items-xl-center">
-                  <p class="numero-contador-header--chico">104</p>
-                  <span
-                    class="text-uppercase span-contador-header--chico ml-xl-5"
-                    >awareness</span
-                  >
-                </div>
-                <div class="text-yellow d-flex align-items-xl-center">
-                  <p class="numero-contador-header--chico">148</p>
-                  <span
-                    class="text-uppercase span-contador-header--chico ml-xl-5"
-                    >learning</span
-                  >
-                </div>
-                <div class="text-yellow d-flex align-items-xl-center">
-                  <p class="numero-contador-header--chico">112</p>
-                  <span
-                    class="text-uppercase span-contador-header--chico ml-xl-5"
-                    >experiment</span
-                  >
-                </div>
-                <div class="text-yellow d-flex align-items-xl-center">
-                  <p class="numero-contador-header--chico">76</p>
-                  <span
-                    class="text-uppercase span-contador-header--chico ml-xl-5"
-                    >pursue</span
-                  >
-                </div>
-                <div class="text-yellow d-xl-flex align-items-xl-center">
-                  <p class="numero-contador-header--chico">16</p>
-                  <span
-                    class="text-uppercase span-contador-header--chico ml-xl-5"
-                    >spinout</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div
-              class="
-                col-xl-4
-                tarjeta-carousel-modelo
-                d-xl-flex
-                justify-content-xl-center
-                align-items-xl-center
-              "
-            >
-              <div>
-                <div class="tarjeta-impacto p-xl-5">
-                  <p class="text-center text-black">
-                    5.000 <br />
-                    <legend class="mt-xl-5">Jóvenes impactados</legend>
-                  </p>
-                </div>
-                <div class="tarjeta-impacto p-xl-5">
-                  <p class="text-center text-black">
-                    50.000<br />
-                    <legend class="mt-xl-5">
-                      Cantidad de jóvenes a los <br />
-                      que queremos llegar en los <br />
-                      próximos 5 años
-                    </legend>
-                  </p>
+              <div
+                class="col-4 d-flex justify-content-center align-items-center"
+              >
+                <div class="tarjeta-flex">
+                  <div class="p-xl-5">
+                    <p class="text-center text-black">
+                      5.000 <br />
+                      <legend class="mt-xl-5">Jóvenes impactados</legend>
+                    </p>
+                  </div>
+                  <div class="tarjeta-impacto p-xl-5">
+                    <p class="text-center text-black">
+                      50.000<br />
+                      <legend class="mt-xl-5">
+                        Cantidad de jóvenes a los <br />
+                        que queremos llegar en los <br />
+                        próximos 5 años
+                      </legend>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -613,53 +662,55 @@
             <h2 class="seccion-titulo">Sedes</h2>
             <span class="yellow-block"></span>
           </div>
-          <div class="seccion-contenido row d-flex justify-content-xl-center">
-            <div class="col-xl-6 mapa-peru">
-              <img src="../assets/images/sedes/zoomPeru.png" alt="Perú" />
-            </div>
-            <div
-              class="
-                col-xl-6
-                tarjeta-carousel-modelo tarjeta-carousel-modelo--sedes
-                d-xl-flex
-                justify-content-xl-center
-                align-items-xl-center
-              "
-            >
-              <div class="p-5">
-                <h2 class="seccion-titulo--sedes text-black font-weight-bold">
-                  Nuestras actividades
-                </h2>
-                <span class="yellow-block yellow-block--black mt-xl-2"></span>
-                <ul class="list-unstyled text-black lista-actividades">
-                  <li class="mb-xl-3">Innovation Bootcamp</li>
-                  <li class="mb-xl-3">Lexus</li>
-                  <li class="mb-xl-3">Modo Fail</li>
-                  <li class="mb-xl-3">Taller de Design Thinking</li>
-                  <li class="mb-xl-3">Retiros I&E</li>
-                  <li class="mb-xl-3">Train to trainers</li>
-                  <li class="mb-xl-3">Programa de Preincubación</li>
-                  <li class="mb-xl-3">Taller de Ikigai</li>
-                  <li class="mb-xl-3">Taller de Life Design</li>
-                  <li class="mb-xl-3">Círculos de lectura</li>
-                  <li class="mb-xl-3">Hora Spinout</li>
-                </ul>
+          <div class="seccion-contenido container">
+            <div class="row">
+              <div class="col-6 mapa-peru">
+                <img src="../assets/images/sedes/zoomPeru.png" alt="Perú" />
+              </div>
+              <div
+                class="
+                  col-6
+                  tarjeta-flex
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <div class="p-5">
+                  <h2 class="seccion-titulo--sedes text-black font-weight-bold">
+                    Nuestras actividades
+                  </h2>
+                  <span class="yellow-block yellow-block--black mt-xl-2"></span>
+                  <ul class="list-unstyled text-black lista-actividades">
+                    <li class="mb-xl-3">Innovation Bootcamp</li>
+                    <li class="mb-xl-3">Lexus</li>
+                    <li class="mb-xl-3">Modo Fail</li>
+                    <li class="mb-xl-3">Taller de Design Thinking</li>
+                    <li class="mb-xl-3">Retiros I&E</li>
+                    <li class="mb-xl-3">Train to trainers</li>
+                    <li class="mb-xl-3">Programa de Preincubación</li>
+                    <li class="mb-xl-3">Taller de Ikigai</li>
+                    <li class="mb-xl-3">Taller de Life Design</li>
+                    <li class="mb-xl-3">Círculos de lectura</li>
+                    <li class="mb-xl-3">Hora Spinout</li>
+                  </ul>
 
-                <button
-                  type="button"
-                  class="
-                    mx-auto
-                    d-block
-                    btn btn-dark
-                    active
-                    font-weight-bold
-                    boton-actividades
-                    text-white
-                    mt-xl-5
-                  "
-                >
-                  Conoce el cronograma
-                </button>
+                  <button
+                    type="button"
+                    class="
+                      mx-auto
+                      d-block
+                      btn btn-dark
+                      active
+                      font-weight-bold
+                      boton-actividades
+                      text-white
+                      mt-xl-5
+                    "
+                  >
+                    Conoce el cronograma
+                  </button>
+                </div>
               </div>
             </div>
           </div>
