@@ -177,6 +177,7 @@ h3 {
 }
 
 /* SECCION PROPOSITO */
+
 #proposito {
   background-image: linear-gradient(
       to bottom,
@@ -193,6 +194,7 @@ h3 {
   border-radius: 10px;
   padding: 3rem;
 }
+
 .logo-mascota {
   height: 300px;
 }
@@ -496,6 +498,58 @@ h3 {
 
 .contenedor-aliados {
   margin-top: 17rem;
+}
+
+/*FOOTER*/
+
+footer {
+  margin-top: 5rem;
+}
+
+p.newsletter {
+  font-size: 2.85rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+input[type="text"] {
+  height: 50px;
+  background-color: #000000;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.35rem;
+  outline: none;
+}
+
+.redes-sociales button {
+  width: 160px;
+  font-size: 2.5rem;
+}
+
+.separador {
+  position: absolute;
+  background-color: var(--color-yellow);
+  height: 100%;
+  width: 1px;
+  margin-left: 370px;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  margin-top: 6rem;
+}
+
+.contactanos-redes-texto {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.iconos-redes {
+  margin-top: 7rem;
+}
+
+ul li a {
+  font-size: 2.5rem;
 }
 
 @media (min-width: 992px) {
