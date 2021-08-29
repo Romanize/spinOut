@@ -112,12 +112,8 @@ h3 {
   border-radius: 0.55rem;
 }
 
-.navbar-toggler-icon {
-  filter: invert(1);
-}
-
 .navbar-collapse {
-  margin-top: 3rem;
+  flex-grow: 0;
 }
 
 /*SECCION INICIO*/
@@ -170,10 +166,6 @@ h3 {
 
 .bg-image--inicio {
   background-image: url(../images/background/fondoInicio.png);
-}
-
-.seccion--main {
-  height: 75vh;
 }
 
 /* SECCION PROPOSITO */
@@ -365,7 +357,7 @@ h3 {
 
 .carousel-modelo {
   display: flex;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .tarjeta-carousel-modelo {
@@ -376,6 +368,11 @@ h3 {
   margin-top: 7rem;
   flex-shrink: 0;
   margin-right: 200px;
+  flex-wrap: wrap;
+}
+
+.tarjeta-carousel-modelo:last-child {
+  margin-right: 0;
 }
 
 .tarjeta-carousel-modelo img {
@@ -398,7 +395,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
 
 /* SECCION IMPACTO */
@@ -436,6 +433,7 @@ h3 {
 .tarjeta-flex {
   background-color: var(--color-yellow);
   border-radius: 1rem;
+  flex-grow: 1;
 }
 
 .tarjeta-flex p {
@@ -457,6 +455,20 @@ h3 {
       rgba(0, 0, 0, 1)
     ),
     url(../images/background/fondoSedes.png);
+}
+
+.mapa-peru {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa-peru > img {
+  width: 100%;
+}
+
+.actividades {
+  width: 100%;
 }
 
 .tarjeta-carousel-modelo--sedes {
@@ -494,10 +506,23 @@ h3 {
 .persona-tarjeta--aliados {
   height: 430px;
   width: 270px;
+  margin-right: 0;
 }
 
 .contenedor-aliados {
   margin-top: 17rem;
+}
+
+/* SECCION ALIADOS */
+
+.aliados-tarjeta {
+  border-radius: 10px;
+  border: solid 3px var(--color-yellow);
+  margin-right: 1rem;
+  padding: 1rem 0.5rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /*FOOTER*/
@@ -539,6 +564,10 @@ input[type="text"] {
   margin-top: 6rem;
 }
 
+.contactanos i {
+  font-size: 2rem;
+}
+
 .contactanos-redes-texto {
   font-size: 2rem;
   font-weight: 400;
@@ -548,13 +577,19 @@ input[type="text"] {
   margin-top: 7rem;
 }
 
-ul li a {
+.iconos-redes > a {
+  color: var(--color-yellow);
+  font-size: 2rem;
+}
+
+.footer-list {
+  width: 100%;
+}
+
+.footer-list li a {
   font-size: 2.5rem;
 }
 
 .navbar-brand img {
   width: 19.1rem;
-  margin-right: 33.1rem;
-  margin-top: 2rem;
-  margin-bottom: 3.2rem;
 }
