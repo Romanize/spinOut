@@ -1,604 +1,646 @@
-/*GENERALES*/
-
-html {
-    box-sizing: border-box;
-    font-size: 12px;
-    --color-yellow: #ffc107;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-}
-
-
-/*UTILIDADES*/
-
-.text-underline {
-    text-decoration: underline;
-}
-
-.bg-black {
-    background-color: #000000;
-}
-
-.text-black {
-    color: rgba(0, 0, 0, 1);
-}
-
-.text-yellow {
-    color: var(--color-yellow);
-}
-
-.line-height {
-    line-height: 1.5;
-}
-
-.seccion-titulo {
-    font-size: 5rem;
-    font-weight: 700;
-}
-
-.background {
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-position-y: 10rem;
-}
-
-.yellow-block {
-    display: inline-block;
-    height: 1rem;
-    width: 8rem;
-    background-color: var(--color-yellow);
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-}
-
-.seccion {
-    overflow: hidden;
-    padding: 3rem 0 2rem 0;
-    border-top: 1px solid var(--color-yellow);
-    border-bottom: 1px solid var(--color-yellow);
-}
-
-.seccion--borderless {
-    overflow: hidden;
-    padding: 3rem 0 2rem 0;
-}
-
-.seccion-texto {
-    /*maybe P selector*/
-    font-size: 1.5rem;
-}
-
-.seccion-subtitulo {
-    font-size: 2rem;
-}
-
-.small-text {
-    font-size: 1.2rem;
-}
-
-h3 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-
-/*NAVEGACION*/
-
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-brand {
-    color: rgba(255, 255, 255, 1);
-    font-weight: 700;
-    font-size: 1.7rem;
-    margin-right: 1.2rem;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: rgba(255, 193, 7, 1);
-}
-
-.navbar-light .navbar-toggler {
-    border-color: #979797;
-}
-
-.navbar-toggler {
-    border-radius: 0.55rem;
-}
-
-.navbar-collapse {
-    flex-grow: 0;
-}
-
-.navbar a img {
-    width: 200px;
-}
-
-.navbar-toggler-icon {
-    filter: invert(1);
-}
-
-.navbar-collapse {
-    text-align: center;
-}
-
-
-/*SECCION INICIO*/
-
-.text-slider__mindsets {
-    color: var(--color-yellow);
-    font-size: 1.4rem;
-}
-
-.text-slider__phrase {
-    font-size: 1.8rem;
-    color: var(--color-yellow);
-}
-
-.btn--yellow {
-    background-color: var(--color-yellow);
-    color: black;
-    border: 2px dashed var(--color-yellow);
-    transition: all 0.3s ease-in;
-}
-
-.btn--yellow:hover {
-    background-color: black;
-    color: var(--color-yellow);
-    border: 2px dashed var(--color-yellow);
-    text-decoration: underline var(--color-yellow);
-}
-
-.btn--dark {
-    background-color: black;
-    color: var(--color-yellow);
-    border: 2px solid var(--color-yellow);
-    transition: all 0.3s ease-in;
-}
-
-.btn--dark:hover {
-    border: 2px dashed white;
-    color: white;
-    text-decoration: underline white;
-}
-
-.bg-image {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 90%;
-    height: auto;
-    width: 100%;
-}
-
-.bg-image--inicio {
-    background-image: url(../images/background/fondoInicio.png);
-}
-
-
-/* SECCION PROPOSITO */
-
-#proposito {
-    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(../images/background/fondoProposito.png);
-}
-
-.seccion-bordeada {
-    border: solid 3px var(--color-yellow);
-    height: 100%;
-    border-radius: 10px;
-    padding: 3rem;
-}
-
-.logo-mascota {
-    height: 300px;
-}
-
-
-/* SECCION COMUNIDAD */
-
-#comunidad {
-    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(../images/background/fondoComunidad.png);
-}
-
-.contenido-tarjetas {
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-.tarjeta {
-    padding: 0.5rem;
-    border-radius: 1rem;
-    width: 45%;
-    align-self: stretch;
-}
-
-.tarjeta--acuerdo {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.tarjeta--alineacion {
-    background-color: var(--color-yellow);
-    position: relative;
-}
-
-.tarjeta--alineacion>img {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-.carousel-spinouters {
-    margin-top: 2rem;
-}
-
-.select-spinouters {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-.select-spinouters>span {
-    font-size: 3.5rem;
-    cursor: pointer;
-    font-weight: normal;
-}
-
-.carousel-tarjetas {
-    display: flex;
-    overflow: auto;
-}
-
-.carousel-tarjetas::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-}
-
-.persona-tarjeta {
-    border-radius: 10px;
-    border: solid 3px var(--color-yellow);
-    margin-right: 1rem;
-    width: 270px;
-    padding: 1rem 0.5rem;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.persona-imagen {
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 1rem auto;
-    width: fit-content;
-}
-
-.persona-imagen>img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-}
-
-.persona-tarjeta a {
-    color: var(--color-yellow);
-}
-
-.persona-texto {
-    flex-grow: 1;
-}
-
-.persona-texto::before {
-    content: '"';
-    font-size: 1.5rem;
-    font-style: italic;
-}
-
-.persona-texto::after {
-    content: '"';
-    font-size: 1.5rem;
-    font-style: italic;
-}
-
-
-/*SECCION MODELO*/
-
-.bloque-alepso {
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale();
-    background-size: cover;
-    width: 237px;
-    height: 240px;
-}
-
-.bloque-alepso:hover {
-    filter: none;
-}
-
-.bloque-alepso--a {
-    background-image: url(../images/alepso/A.jpg);
-}
-
-.bloque-alepso--l {
-    background-image: url(../images/alepso/L.jpg);
-}
-
-.bloque-alepso--e {
-    background-image: url(../images/alepso/E.jpg);
-}
-
-.bloque-alepso--p {
-    background-image: url(../images/alepso/P.jpg);
-}
-
-.bloque--so-wrapper {
-    width: 474px;
-    height: 240px;
-    background-color: red;
-    justify-content: space-around;
-    align-items: center;
-    filter: grayscale();
-    background-image: url(../images/alepso/SO.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.bloque--so-wrapper:hover {
-    filter: none;
-}
-
-.bloque-alepso h4,
-.bloque--so-wrapper h4 {
-    font-size: 12rem;
-    font-weight: 700;
-}
-
-.carousel-modelo {
-    display: flex;
-    overflow: auto;
-}
-
-.carousel-modelo::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
-
-.tarjeta-carousel-modelo {
-    padding: 0.5rem;
-    border-radius: 1rem;
-    width: 100%;
-    background-color: var(--color-yellow);
-    margin-top: 7rem;
-    flex-shrink: 0;
-    margin-right: 200px;
-    flex-wrap: wrap;
-}
-
-.tarjeta-carousel-modelo:last-child {
-    margin-right: 0;
-}
-
-.tarjeta-carousel-modelo img {
-    width: 460px;
-    border-radius: 3rem;
-    padding: 2rem;
-}
-
-.tarjeta-carousel-modelo p {
-    font-size: 2rem;
-}
-
-.tarjeta-carousel-modelo h4 {
-    font-size: 3rem;
-    font-weight: 400;
-}
-
-.tarjeta-carousel-modelo a p {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    text-align: center;
-    margin-right: 2rem;
-}
-
-
-/* SECCION IMPACTO */
-
-#impacto {
-    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(../images/background/fondoImpacto.png);
-}
-
-.numero-contador-header {
-    font-size: 16.7rem;
-    font-weight: 400;
-}
-
-.span-contador-header {
-    font-variant: small-caps;
-    font-size: 3rem;
-    font-weight: 500;
-}
-
-.numero-contador-header--chico {
-    font-size: 5.35rem;
-}
-
-.span-contador-header--chico {
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.tarjeta-flex {
-    background-color: var(--color-yellow);
-    border-radius: 1rem;
-    flex-grow: 1;
-}
-
-.tarjeta-flex p {
-    font-size: 8rem;
-}
-
-.tarjeta-flex p legend {
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-
-/* SECCION SEDES */
-
-#sedes {
-    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(../images/background/fondoSedes.png);
-}
-
-.mapa-peru {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mapa-peru>img {
-    width: 100%;
-}
-
-.actividades {
-    width: 100%;
-}
-
-.tarjeta-carousel-modelo--sedes {
-    max-width: 37%;
-    margin-top: 0;
-}
-
-.yellow-block--black {
-    background-color: #000000;
-}
-
-.seccion-titulo--sedes {
-    font-size: 4rem;
-}
-
-.lista-actividades {
-    font-weight: 400;
-    font-size: 1.7rem;
-}
-
-.boton-actividades {
-    font-size: 2.5rem;
-    width: 80% !important;
-    border-radius: 5px;
-}
-
-.persona-texto--sedes {
-    font-size: 1.17rem;
-}
-
-.persona-tarjeta h5 {
-    font-size: 1.18rem;
-}
-
-.persona-tarjeta--aliados {
-    height: 430px;
-    width: 270px;
-    margin-right: 0;
-}
-
-.contenedor-aliados {
-    margin-top: 17rem;
-}
-
-
-/* SECCION ALIADOS */
-
-.aliados-tarjeta {
-    border-radius: 10px;
-    border: solid 3px var(--color-yellow);
-    margin-right: 1rem;
-    padding: 1rem 0.5rem;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-
-/*FOOTER*/
-
-footer {
-    margin-top: 5rem;
-}
-
-p.newsletter {
-    font-size: 2.85rem;
-    font-weight: 500;
-    line-height: 1;
-}
-
-input[type="text"] {
-    height: 50px;
-    background-color: #000000;
-    border-radius: 5px;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.35rem;
-    outline: none;
-}
-
-.redes-sociales button {
-    width: 160px;
-    font-size: 2.5rem;
-}
-
-.separador {
-    position: absolute;
-    background-color: var(--color-yellow);
-    height: 100%;
-    width: 1px;
-    margin-left: 370px;
-}
-
-.titulo {
-    font-size: 2.5rem;
-    margin-top: 6rem;
-}
-
-.contactanos i {
-    font-size: 2rem;
-}
-
-.contactanos-redes-texto {
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-.iconos-redes {
-    margin-top: 7rem;
-}
-
-.iconos-redes>a {
-    color: var(--color-yellow);
-    font-size: 2rem;
-}
-
-.footer-list {
-    width: 100%;
-}
-
-.footer-list li a {
-    font-size: 2.5rem;
-}
-
-.navbar-brand img {
-    width: 19.1rem;
-}
-
-
-/*MEDIA QUERYS*/
-
-@media (min-width:360px) and (max-width:1200px) {
-    .seccion-titulo {
-        font-size: 3rem;
+    /*GENERALES*/
+    
+    html {
+        box-sizing: border-box;
+        font-size: 12px;
+        --color-yellow: #ffc107;
     }
-}
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+    /*UTILIDADES*/
+    
+    .text-underline {
+        text-decoration: underline;
+    }
+    
+    .bg-black {
+        background-color: #000000;
+    }
+    
+    .text-black {
+        color: rgba(0, 0, 0, 1);
+    }
+    
+    .text-yellow {
+        color: var(--color-yellow);
+    }
+    
+    .line-height {
+        line-height: 1.5;
+    }
+    
+    .seccion-titulo {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+    
+    .background {
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-position-y: 10rem;
+    }
+    
+    .yellow-block {
+        display: inline-block;
+        height: 1rem;
+        width: 8rem;
+        background-color: var(--color-yellow);
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .seccion {
+        overflow: hidden;
+        padding: 3rem 0 2rem 0;
+        border-top: 1px solid var(--color-yellow);
+        border-bottom: 1px solid var(--color-yellow);
+    }
+    
+    .seccion--borderless {
+        overflow: hidden;
+        padding: 3rem 0 2rem 0;
+    }
+    
+    .seccion-texto {
+        /*maybe P selector*/
+        font-size: 1.5rem;
+    }
+    
+    .seccion-subtitulo {
+        font-size: 2rem;
+    }
+    
+    .small-text {
+        font-size: 1.2rem;
+    }
+    
+    h3 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    /*NAVEGACION*/
+    
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-brand {
+        color: rgba(255, 255, 255, 1);
+        font-weight: 700;
+        font-size: 1.7rem;
+        margin-right: 1.2rem;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: rgba(255, 193, 7, 1);
+    }
+    
+    .navbar-light .navbar-toggler {
+        border-color: #979797;
+    }
+    
+    .navbar-toggler {
+        border-radius: 0.55rem;
+    }
+    
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+    
+    .navbar a img {
+        width: 200px;
+    }
+    
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
+    
+    .navbar-collapse {
+        text-align: center;
+    }
+    /*SECCION INICIO*/
+    
+    .text-slider__mindsets {
+        color: var(--color-yellow);
+        font-size: 1.4rem;
+    }
+    
+    .text-slider__phrase {
+        font-size: 1.8rem;
+        color: var(--color-yellow);
+    }
+    
+    .btn--yellow {
+        background-color: var(--color-yellow);
+        color: black;
+        border: 2px dashed var(--color-yellow);
+        transition: all 0.3s ease-in;
+        font-size: 1.7rem;
+    }
+    
+    .btn-inicio--o {
+        font-size: 1.6rem;
+    }
+    
+    .btn--yellow:hover {
+        background-color: black;
+        color: var(--color-yellow);
+        border: 2px dashed var(--color-yellow);
+        text-decoration: underline var(--color-yellow);
+    }
+    
+    .btn--dark {
+        background-color: black;
+        color: var(--color-yellow);
+        border: 2px solid var(--color-yellow);
+        transition: all 0.3s ease-in;
+        font-size: 1.7rem;
+    }
+    
+    .btn--dark:hover {
+        border: 2px dashed white;
+        color: white;
+        text-decoration: underline white;
+    }
+    
+    .bg-image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 90%;
+        height: auto;
+        width: 100%;
+    }
+    
+    .bg-image--inicio {
+        background-image: url(../images/background/fondoInicio.png);
+    }
+    /* SECCION PROPOSITO */
+    
+    #proposito {
+        background-image: linear-gradient( to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(../images/background/fondoProposito.png);
+    }
+    
+    .seccion-bordeada {
+        border: solid 3px var(--color-yellow);
+        height: 100%;
+        border-radius: 10px;
+        padding: 3rem;
+    }
+    
+    .logo-mascota {
+        height: 300px;
+    }
+    /* SECCION COMUNIDAD */
+    
+    #comunidad {
+        background-image: linear-gradient( to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(../images/background/fondoComunidad.png);
+    }
+    
+    .contenido-tarjetas {
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    
+    .tarjeta {
+        padding: 0.5rem;
+        border-radius: 1rem;
+        width: 45%;
+        align-self: stretch;
+    }
+    
+    .tarjeta--acuerdo {
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .tarjeta--alineacion {
+        background-color: var(--color-yellow);
+        position: relative;
+    }
+    
+    .tarjeta--alineacion>img {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    .carousel-spinouters {
+        margin-top: 2rem;
+    }
+    
+    .select-spinouters {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    
+    .select-spinouters>span {
+        font-size: 3.5rem;
+        cursor: pointer;
+        font-weight: normal;
+    }
+    
+    .carousel-tarjetas {
+        display: flex;
+        overflow: auto;
+    }
+    
+    .carousel-tarjetas::-webkit-scrollbar {
+        height: 0;
+        width: 0;
+    }
+    
+    .persona-tarjeta {
+        border-radius: 10px;
+        border: solid 3px var(--color-yellow);
+        margin-right: 1rem;
+        width: 270px;
+        padding: 1rem 0.5rem;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .persona-imagen {
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 1rem auto;
+        width: fit-content;
+    }
+    
+    .persona-imagen>img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+    
+    .persona-tarjeta a {
+        color: var(--color-yellow);
+    }
+    
+    .persona-texto {
+        flex-grow: 1;
+    }
+    
+    .persona-texto::before {
+        content: '"';
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+    
+    .persona-texto::after {
+        content: '"';
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+    /*SECCION MODELO*/
+    
+    .bloque-alepso {
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: grayscale();
+        background-size: cover;
+        width: 237px;
+        height: 240px;
+    }
+    
+    .bloque-alepso:hover {
+        filter: none;
+    }
+    
+    .bloque-alepso--a {
+        background-image: url(../images/alepso/A.jpg);
+        border-right: 2px solid black;
+    }
+    
+    .bloque-alepso--l {
+        background-image: url(../images/alepso/L.jpg);
+        border-right: 2px solid black;
+    }
+    
+    .bloque-alepso--e {
+        background-image: url(../images/alepso/E.jpg);
+        border-right: 2px solid black;
+    }
+    
+    .bloque-alepso--p {
+        background-image: url(../images/alepso/P.jpg);
+        border-right: 2px solid black;
+    }
+    
+    .bloque--so-wrapper {
+        width: 474px;
+        height: 240px;
+        background-color: red;
+        justify-content: space-around;
+        align-items: center;
+        filter: grayscale();
+        background-image: url(../images/alepso/SO.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .bloque--so-wrapper:hover {
+        filter: none;
+    }
+    
+    .bloque-alepso h4,
+    .bloque--so-wrapper h4 {
+        font-size: 12rem;
+        font-weight: 700;
+    }
+    
+    .carousel-modelo {
+        display: flex;
+        overflow: auto;
+    }
+    
+    .carousel-modelo::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    
+    .tarjeta-carousel-modelo {
+        padding: 0.5rem;
+        border-radius: 1rem;
+        width: 100%;
+        background-color: var(--color-yellow);
+        margin-top: 7rem;
+        flex-shrink: 0;
+        margin-right: 200px;
+        flex-wrap: wrap;
+    }
+    
+    .tarjeta-carousel-modelo:last-child {
+        margin-right: 0;
+    }
+    
+    .tarjeta-carousel-modelo img {
+        width: 460px;
+        border-radius: 3rem;
+        padding: 2rem;
+    }
+    
+    .tarjeta-carousel-modelo p {
+        font-size: 2rem;
+    }
+    
+    .tarjeta-carousel-modelo h4 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    
+    .tarjeta-carousel-modelo a p {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+        margin-right: 2rem;
+    }
+    /* SECCION IMPACTO */
+    
+    #impacto {
+        background-image: linear-gradient( to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(../images/background/fondoImpacto.png);
+    }
+    
+    .numero-contador-header {
+        font-size: 16.7rem;
+        font-weight: 400;
+    }
+    
+    .span-contador-header {
+        font-variant: small-caps;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    
+    .numero-contador-header--chico {
+        font-size: 5.35rem;
+    }
+    
+    .span-contador-header--chico {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    .tarjeta-flex {
+        background-color: var(--color-yellow);
+        border-radius: 1rem;
+        flex-grow: 1;
+    }
+    
+    .tarjeta-flex p {
+        font-size: 8rem;
+    }
+    
+    .tarjeta-flex p legend {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    /* SECCION SEDES */
+    
+    #sedes {
+        background-image: linear-gradient( to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(../images/background/fondoSedes.png);
+    }
+    
+    .mapa-peru {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mapa-peru>img {
+        width: 100%;
+    }
+    
+    .actividades {
+        width: 100%;
+    }
+    
+    .tarjeta-carousel-modelo--sedes {
+        max-width: 37%;
+        margin-top: 0;
+    }
+    
+    .yellow-block--black {
+        background-color: #000000;
+    }
+    
+    .seccion-titulo--sedes {
+        font-size: 4rem;
+    }
+    
+    .lista-actividades {
+        font-weight: 400;
+        font-size: 1.7rem;
+    }
+    
+    .boton-actividades {
+        font-size: 2.5rem;
+        width: 80% !important;
+        border-radius: 5px;
+    }
+    
+    .persona-texto--sedes {
+        font-size: 1.17rem;
+    }
+    
+    .persona-tarjeta h5 {
+        font-size: 1.18rem;
+    }
+    
+    .persona-tarjeta--aliados {
+        height: 430px;
+        width: 270px;
+        margin-right: 0;
+    }
+    
+    .contenedor-aliados {
+        margin-top: 10rem;
+    }
+    /* SECCION ALIADOS */
+    
+    .aliados-tarjeta {
+        border-radius: 10px;
+        border: solid 3px var(--color-yellow);
+        margin-right: 1rem;
+        padding: 1rem 0.5rem;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    /*FOOTER*/
+    
+    footer {
+        margin-top: 10rem;
+    }
+    
+    p.newsletter {
+        font-size: 2.85rem;
+        font-weight: 500;
+        line-height: 1;
+    }
+    
+    input[type="text"] {
+        height: 50px;
+        background-color: #000000;
+        border-radius: 5px;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.35rem;
+        outline: none;
+    }
+    
+    .redes-sociales button {
+        width: 160px;
+        font-size: 2.5rem;
+    }
+    
+    .separador {
+        position: absolute;
+        background-color: var(--color-yellow);
+        height: 100%;
+        width: 1px;
+        margin-left: 370px;
+    }
+    
+    .titulo {
+        font-size: 2.5rem;
+        margin-top: 6rem;
+    }
+    
+    .contactanos i {
+        font-size: 2rem;
+    }
+    
+    .contactanos-redes-texto {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .iconos-redes {
+        margin-top: 7rem;
+    }
+    
+    .iconos-redes>a {
+        color: var(--color-yellow);
+        font-size: 2rem;
+    }
+    
+    .footer-list {
+        width: 100%;
+    }
+    
+    .footer-list li a {
+        font-size: 2.5rem;
+    }
+    
+    .navbar-brand img {
+        width: 19.1rem;
+    }
+    /*MEDIA QUERYS*/
+    
+    @media (min-width:360px) and (max-width:1200px) {
+        .seccion-titulo {
+            font-size: 3rem;
+        }
+    }
+    
+    @media (min-width:360px)and (max-width:768px) {
+        .btn--yellow,
+        .btn--dark {
+            font-size: 15px;
+        }
+        .seccion-subtitulo {
+            font-size: 1.7rem;
+        }
+        .seccion-texto {
+            font-size: 1.3rem;
+        }
+        .texto-unite {
+            text-align: left!important;
+        }
+        .seccion-texto--comunidad {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .tarjeta {
+            padding: 1.5rem;
+        }
+        .tarjeta--acuerdo {
+            margin-top: 20px;
+        }
+        .select-spinouters .fas {
+            line-height: 2;
+        }
+        .carousel-spinouters {
+            margin-top: 5rem;
+        }
+        .carousel-tarjetas {
+            margin-top: 3rem;
+        }
+        .tarjeta-carousel-modelo img {
+            width: 100%;
+            padding: 0;
+        }
+        .bloque-alepso--a,
+        .bloque-alepso--e {
+            border-right: 2px solid black;
+        }
+        .bloque-alepso {
+            border-bottom: 2px solid black;
+        }
+        .texto-tarjeta--modelo {
+            font-size: 2.5rem!important;
+            text-align: left!important;
+        }
+        .tarjeta-carousel-modelo a p {
+            font-size: 1.7rem;
+            margin-right: 0;
+        }
+    }
