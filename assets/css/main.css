@@ -204,10 +204,9 @@ h3 {
 }
 
 .contenido-tarjetas {
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .tarjeta {
@@ -358,6 +357,11 @@ h3 {
 .carousel-modelo {
   display: flex;
   overflow: auto;
+}
+
+.carousel-modelo::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .tarjeta-carousel-modelo {
