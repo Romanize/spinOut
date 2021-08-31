@@ -1,99 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TODO -- GOOGLE FONTS INCLUTION -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/021492e5b9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/021492e5b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css"
+      integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="assets/js/main.js" defer></script>
     <title>SpinOut</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="bg-black">
-        <header class="container">
-            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                <a class="navbar-brand pt-4 pb-4" href="#">
-                    <img src="assets/images/logo.png" alt="logo" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <header class="container">
+        <nav
+          class="navbar navbar-expand-lg navbar-light justify-content-between"
+        >
+          <a class="navbar-brand pt-4 pb-4" href="#">
+            <img src="assets/images/logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item-active">
-                            <a class="nav-link" href="#inicio">Inicio<span class="sr-only">(current)</span></a
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item-active">
+                <a class="nav-link" href="#inicio"
+                  >Inicio<span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#proposito">Propósito</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#comunidad">Comunidad</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#modelo">Nuestro modelo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#impacto">Impacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sedes</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main id="inicio" class="container-fluid seccion-container">
-            <div class="text-slider p-2 my-5">
-                <h4 class="
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comunidad">Comunidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#modelo">Nuestro modelo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#impacto">Impacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sedes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main id="inicio" class="container-fluid seccion-container">
+        <div class="text-slider p-2 my-5">
+          <h4
+            class="
               text-slider__mindsets
               text-center
               font-weight-light
               text-uppercase
-            ">
-                    Mindsets
-                </h4>
-                <p class="
+            "
+          >
+            Mindsets
+          </h4>
+          <p
+            class="
               text-slider__phrase
               text-center
               font-weight-normal font-italic
               p-2
               line-height
-            " id="mindsets">
-                    "Tus capacidades sólo se valoran por tus acciones tangibles"
-                </p>
-            </div>
-            <div class="container seccion text-white">
-                <h1 class="seccion-titulo mt-5">
-                    Descubre tu talento y encuentra tu pasión en comunidad
-                </h1>
-                <span class="yellow-block"></span>
-                <p class="seccion-subtitulo">
-                    ¡Sé parte de nuestras próximas actividades y da comienzo <br /> a tu experiencia SpinOut!
-                </p>
-                <div class="mt-5 d-flex flex-start">
-                    <div>
-                        <a href="#" class="
+            "
+            id="mindsets"
+          >
+            "Tus capacidades sólo se valoran por tus acciones tangibles"
+          </p>
+        </div>
+        <div class="container seccion text-white">
+          <h1 class="seccion-titulo mt-5">
+            Descubre tu talento y encuentra tu pasión en comunidad
+          </h1>
+          <span class="yellow-block"></span>
+          <p class="seccion-subtitulo">
+            ¡Sé parte de nuestras próximas actividades y da comienzo <br />
+            a tu experiencia SpinOut!
+          </p>
+          <div class="mt-5 d-flex flex-start">
+            <div>
+              <a
+                href="#"
+                class="
                   btn btn--yellow
                   text-underline
                   font-weight-bolder
                   text-black
                   p-3
-                ">Postula aquí</a
+                "
+                >Postula aquí</a
               >
-
-            </div><span class="text-white mr-4 ml-4 btn-inicio--o mt-4"> O</span>
+            </div>
+            <span class="text-white mr-4 ml-4 btn-inicio--o mt-4"> O</span>
             <div>
               <a
                 href="#"
@@ -207,9 +252,9 @@
               juntemos de forma natural y espontánea
             </p>
             <div class="carousel-spinouters text-yellow">
-              <div class="select-spinouters">
+              <div class="select-spinouters align-items-center">
                 <span><i class="fas fa-chevron-left carousel-left"></i></span>
-                <h3 class="text-center" style="font-weight: 600">
+                <h3 class="text-center m-0" style="font-weight: 600">
                   SpinOuters destacados
                 </h3>
                 <span><i class="fas fa-chevron-right carousel-right"></i></span>
@@ -229,16 +274,21 @@
                   </p>
                   <h4>Viviana</h4>
                   <a href="https://www.linkedin.com/in/vivianara/">Linkedin</a>
-                    </div>
-                    <div class="persona-tarjeta">
-                        <div class="persona-imagen">
-                            <img src="assets/images/people/Jaime_card.jpeg" alt="Jaime" />
-                        </div>
-                        <p class="persona-texto">
-                            La comunidad promueve pensamientos que le permiten crecer a uno mismo tanto a nivel profesional como personal
-                        </p>
-                        <h4>Jaime</h4>
-                        <a href="https://www.linkedin.com/in/jalexaltamirano/">Linkedin</a
+                </div>
+                <div class="persona-tarjeta">
+                  <div class="persona-imagen">
+                    <img
+                      src="assets/images/people/Jaime_card.jpeg"
+                      alt="Jaime"
+                    />
+                  </div>
+                  <p class="persona-texto">
+                    La comunidad promueve pensamientos que le permiten crecer a
+                    uno mismo tanto a nivel profesional como personal
+                  </p>
+                  <h4>Jaime</h4>
+                  <a href="https://www.linkedin.com/in/jalexaltamirano/"
+                    >Linkedin</a
                   >
                 </div>
                 <div class="persona-tarjeta">
@@ -349,9 +399,17 @@
                     align-items-center
                     d-flex
                     col-6 col-md-4 col-lg-2
+                    position-relative
                   "
                 >
                   <h4>A</h4>
+                  <div class="contenido-bloque">
+                    <h5>Awareness</h5>
+                    <p>
+                      Abre tu mente a nuevas posibilidades y empieza a reconocer
+                      tu potencial
+                    </p>
+                  </div>
                 </div>
                 <div
                   class="
@@ -363,6 +421,10 @@
                   "
                 >
                   <h4>L</h4>
+                  <div class="contenido-bloque">
+                    <h5>Learning</h5>
+                    <p>Aprende a aprender en comunidad</p>
+                  </div>
                 </div>
                 <div
                   class="
@@ -374,6 +436,10 @@
                   "
                 >
                   <h4>E</h4>
+                  <div class="contenido-bloque">
+                    <h5>Experiment</h5>
+                    <p>Desarrolla tus habilidades en el campo</p>
+                  </div>
                 </div>
                 <div
                   class="
@@ -385,25 +451,52 @@
                   "
                 >
                   <h4>P</h4>
+                  <div class="contenido-bloque">
+                    <h5>Pursue</h5>
+                    <p>Transforma tus acciones en pasos para un propósito</p>
+                  </div>
                 </div>
-                <div class="bloque--so-wrapper d-flex col-12 col-md-8 col-lg-4">
-                  <h4>S</h4>
-                  <h4>O</h4>
+                <div
+                  class="
+                    bloque--so-wrapper
+                    col-12 col-md-8 col-lg-4
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <div
+                    class="
+                      so-letters
+                      d-flex
+                      justify-content-around
+                      align-items-center
+                      w-100
+                    "
+                  >
+                    <h4>S</h4>
+                    <h4>O</h4>
+                  </div>
+                  <div class="contenido-bloque">
+                    <h5>Spin Out</h5>
+                    <p>Trasciende mientras logras tu máximo potencial</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-modelo">
-            <div
-              class="tarjeta-carousel-modelo text-black d-flex align-items-end"
-            >
+            <div class="tarjeta-carousel-modelo text-black row align-items-end">
               <div class="col-12 col-lg-6 text-center">
                 <img src="assets/images/carousel/1.jpg" alt="imagen1-modelo" />
               </div>
               <div class="col-12 col-lg-6">
                 <p
-                  class="font-weight-light font-italic text-justify mr-5 mb-0 texto-tarjeta--modelo"
-                  style="font-size: 3rem"
+                  class="
+                    font-weight-light font-italic
+                    mb-0
+                    texto-tarjeta--modelo
+                  "
                 >
                   Necesitamos que la<br />educación comience<br />por el
                   autoconocimiento.<br />
@@ -415,102 +508,136 @@
                     ></span>
                   </p>
                 </a>
-                    </div>
-                </div>
-                <div class="tarjeta-carousel-modelo text-black d-flex align-items-end">
-                    <div class="col-6 text-center">
-                        <img style="filter: grayscale(1)" src="assets/images/carousel/2.jpg" alt="imagen2-modelo" />
-                    </div>
-                    <div class="col-6">
-                        <h4 class="mb-4">Cultura horizontal</h4>
-                        <br />
-                        <p class="font-weight-light font-italic text-justify mr-5 mb-0">
-                            Creemos en una educación sin jerarquías<br />en la que todos tenemos un rol en el<br />aprendizaje.<br />
-                        </p>
-                        <a href="#" class="text-reset text-decoration-none">
-                            <p class="mt-5 text-right">
-                                siguiente<span><i class="ml-4 fas fa-chevron-right"></i
-                    ></span>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="tarjeta-carousel-modelo text-black d-flex align-items-end">
-                    <div class="col-6 text-center">
-                        <img src="assets/images/carousel/3.jpg" alt="imagen3-modelo" />
-                    </div>
-                    <div class="col-6">
-                        <h4 class="mb-4">Aprendizaje bidireccional</h4>
-                        <br />
-                        <p class="font-weight-light font-italic text-justify mr-5 mb-0">
-                            Intercambiamos conocimiento.<br />Somos estudiantes y podemos enseñar.
-                            <br />
-                        </p>
-                        <a href="#" class="text-reset text-decoration-none">
-                            <p class="mt-5 text-right">
-                                siguiente<span><i class="ml-4 fas fa-chevron-right"></i
-                    ></span>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="tarjeta-carousel-modelo text-black d-flex align-items-end">
-                    <div class="col-6 text-center">
-                        <img src="assets/images/carousel/4.jpg" alt="imagen4-modelo" />
-                    </div>
-                    <div class="col-6">
-                        <h4 class="mb-4">Ecosistema de aprendizaje</h4>
-                        <br />
-                        <p class="font-weight-light font-italic text-justify mr-5 mb-0">
-                            No se puede aprender sólo en el aula.<br />
-                        </p>
-                        <a href="#" class="text-reset text-decoration-none">
-                            <p class="mt-5 text-right">
-                                siguiente<span><i class="ml-4 fas fa-chevron-right"></i
-                    ></span>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="tarjeta-carousel-modelo text-black d-flex align-items-end">
-                    <div class="col-6 text-center">
-                        <img src="assets/images/carousel/5.jpg" alt="imagen5-modelo" />
-                    </div>
-                    <div class="col-6">
-                        <h4 class="mb-4">Confianza creativa</h4>
-                        <br />
-                        <p class="font-weight-light font-italic text-justify mr-5 mb-0">
-                            Damos a los estudiantes la oportunidad<br />de probar cosas y materializar sus<br />ideas con confianza.
-                            <br />
-                        </p>
-                        <a href="#" class="text-reset text-decoration-none">
-                            <p class="mt-5 text-right">
-                                siguiente<span><i class="ml-4 fas fa-chevron-right"></i
-                    ></span>
-                            </p>
-                        </a>
-                    </div>
-                </div>
+              </div>
             </div>
-    </div>
-    </section>
-    <section class="container-fluid background text-white seccion-container" id="impacto">
+            <div
+              class="tarjeta-carousel-modelo text-black d-flex align-items-end"
+            >
+              <div class="col-6 text-center">
+                <img
+                  style="filter: grayscale(1)"
+                  src="assets/images/carousel/2.jpg"
+                  alt="imagen2-modelo"
+                />
+              </div>
+              <div class="col-6">
+                <h4 class="mb-4">Cultura horizontal</h4>
+                <br />
+                <p class="font-weight-light font-italic text-justify mr-5 mb-0">
+                  Creemos en una educación sin jerarquías<br />en la que todos
+                  tenemos un rol en el<br />aprendizaje.<br />
+                </p>
+                <a href="#" class="text-reset text-decoration-none">
+                  <p class="mt-5 text-right">
+                    siguiente<span
+                      ><i class="ml-4 fas fa-chevron-right"></i
+                    ></span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div
+              class="tarjeta-carousel-modelo text-black d-flex align-items-end"
+            >
+              <div class="col-6 text-center">
+                <img src="assets/images/carousel/3.jpg" alt="imagen3-modelo" />
+              </div>
+              <div class="col-6">
+                <h4 class="mb-4">Aprendizaje bidireccional</h4>
+                <br />
+                <p class="font-weight-light font-italic text-justify mr-5 mb-0">
+                  Intercambiamos conocimiento.<br />Somos estudiantes y podemos
+                  enseñar.
+                  <br />
+                </p>
+                <a href="#" class="text-reset text-decoration-none">
+                  <p class="mt-5 text-right">
+                    siguiente<span
+                      ><i class="ml-4 fas fa-chevron-right"></i
+                    ></span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div
+              class="tarjeta-carousel-modelo text-black d-flex align-items-end"
+            >
+              <div class="col-6 text-center">
+                <img src="assets/images/carousel/4.jpg" alt="imagen4-modelo" />
+              </div>
+              <div class="col-6">
+                <h4 class="mb-4">Ecosistema de aprendizaje</h4>
+                <br />
+                <p class="font-weight-light font-italic text-justify mr-5 mb-0">
+                  No se puede aprender sólo en el aula.<br />
+                </p>
+                <a href="#" class="text-reset text-decoration-none">
+                  <p class="mt-5 text-right">
+                    siguiente<span
+                      ><i class="ml-4 fas fa-chevron-right"></i
+                    ></span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div
+              class="tarjeta-carousel-modelo text-black d-flex align-items-end"
+            >
+              <div class="col-6 text-center">
+                <img src="assets/images/carousel/5.jpg" alt="imagen5-modelo" />
+              </div>
+              <div class="col-6">
+                <h4 class="mb-4">Confianza creativa</h4>
+                <br />
+                <p class="font-weight-light font-italic text-justify mr-5 mb-0">
+                  Damos a los estudiantes la oportunidad<br />de probar cosas y
+                  materializar sus<br />ideas con confianza.
+                  <br />
+                </p>
+                <a href="#" class="text-reset text-decoration-none">
+                  <p class="mt-5 text-right">
+                    siguiente<span
+                      ><i class="ml-4 fas fa-chevron-right"></i
+                    ></span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container-fluid background text-white seccion-container"
+        id="impacto"
+      >
         <div class="container seccion--borderless">
-            <div class="seccion-header">
-                <h2 class="seccion-titulo">Impacto</h2>
-                <span class="yellow-block"></span>
-            </div>
-            <div class="seccion-contenido container">
-                <div class="row">
-                    <div class="d-flex align-items-center flex-column col-12 col-lg-7">
-                        <div class="
+          <div class="seccion-header">
+            <h2 class="seccion-titulo">Impacto</h2>
+            <span class="yellow-block"></span>
+          </div>
+          <div class="seccion-contenido container">
+            <div class="row">
+              <div
+                class="d-flex align-items-center flex-column col-12 col-lg-7"
+              >
+                <div
+                  class="
                     d-flex
                     text-yellow
                     align-items-center
                     justify-content-center
-                  ">
-                            <p class="numero-contador-header"></p>
-                            <span class="span-contador-header ml-5 p-3">SpinOuters<br />activos<br />actualmente</span
+                    flex-wrap
+                  "
+                >
+                  <p class="numero-contador-header"></p>
+                  <span
+                    class="
+                      span-contador-header
+                      mx-5
+                      p-3
+                      text-center text-md-left
+                    "
+                    >SpinOuters activos actualmente</span
                   >
                 </div>
                 <div class="align-items-center d-flex flex-column">
@@ -522,14 +649,14 @@
                     >
                   </div>
                   <div class="text-yellow d-flex align-items-center">
-                    <p  id="148" class="numero-contador-header--chico"></p>
+                    <p id="148" class="numero-contador-header--chico"></p>
                     <span
                       class="text-uppercase span-contador-header--chico ml-5"
                       >learning</span
                     >
                   </div>
                   <div class="text-yellow d-flex align-items-center">
-                    <p id="112"class="numero-contador-header--chico"></p>
+                    <p id="112" class="numero-contador-header--chico"></p>
                     <span
                       class="text-uppercase span-contador-header--chico ml-5"
                       >experiment</span
@@ -543,7 +670,7 @@
                     >
                   </div>
                   <div class="text-yellow d-flex align-items-center">
-                    <p  id="16" class="numero-contador-header--chico"></p>
+                    <p id="16" class="numero-contador-header--chico"></p>
                     <span
                       class="text-uppercase span-contador-header--chico ml-5"
                       >spinout</span
@@ -559,14 +686,14 @@
                   align-items-center
                 "
               >
-                <div class="tarjeta-flex">
+                <div class="tarjeta-flex tarjeta-impacto">
                   <div class="p-5">
                     <p class="text-center text-black">
                       5.000 <br />
                       <legend class="mt-5">Jóvenes impactados</legend>
                     </p>
                   </div>
-                  <div class="tarjeta-impacto p-5">
+                  <div class="p-5">
                     <p class="text-center text-black">
                       50.000<br />
                       <legend class="mt-5">
@@ -590,39 +717,43 @@
           <div class="seccion-header">
             <h2 class="seccion-titulo">Sedes</h2>
             <span class="yellow-block"></span>
-                        </div>
-                        <div class="seccion-contenido container">
-                            <div class="row">
-                                <div class="col-12 col-lg-6 text-center mapa-peru">
-                                    <img src="../assets/images/sedes/zoomPeru.png" alt="Perú" />
-                                </div>
-                                <div class="
+          </div>
+          <div class="seccion-contenido container">
+            <div class="row">
+              <div class="col-12 col-lg-6 text-center mapa-peru mb-5 mb-lg-0">
+                <img src="../assets/images/sedes/zoomPeru.png" alt="Perú" />
+              </div>
+              <div
+                class="
                   col-12 col-lg-6
                   tarjeta-flex
                   d-flex
                   justify-content-center
                   align-items-center
-                ">
-                                    <div class="p-5 actividades">
-                                        <h2 class="seccion-titulo--sedes text-black font-weight-bold">
-                                            Nuestras actividades
-                                        </h2>
-                                        <span class="yellow-block yellow-block--black mt-2"></span>
-                                        <ul class="list-unstyled text-black lista-actividades">
-                                            <li class="mb-3">Innovation Bootcamp</li>
-                                            <li class="mb-3">Lexus</li>
-                                            <li class="mb-3">Modo Fail</li>
-                                            <li class="mb-3">Taller de Design Thinking</li>
-                                            <li class="mb-3">Retiros I&E</li>
-                                            <li class="mb-3">Train to trainers</li>
-                                            <li class="mb-3">Programa de Preincubación</li>
-                                            <li class="mb-3">Taller de Ikigai</li>
-                                            <li class="mb-3">Taller de Life Design</li>
-                                            <li class="mb-3">Círculos de lectura</li>
-                                            <li class="mb-3">Hora Spinout</li>
-                                        </ul>
+                "
+              >
+                <div class="actividades">
+                  <h2 class="seccion-titulo--sedes text-black font-weight-bold">
+                    Nuestras actividades
+                  </h2>
+                  <span class="yellow-block yellow-block--black mt-2"></span>
+                  <ul class="list-unstyled text-black lista-actividades">
+                    <li class="mb-3">Innovation Bootcamp</li>
+                    <li class="mb-3">Lexus</li>
+                    <li class="mb-3">Modo Fail</li>
+                    <li class="mb-3">Taller de Design Thinking</li>
+                    <li class="mb-3">Retiros I&E</li>
+                    <li class="mb-3">Train to trainers</li>
+                    <li class="mb-3">Programa de Preincubación</li>
+                    <li class="mb-3">Taller de Ikigai</li>
+                    <li class="mb-3">Taller de Life Design</li>
+                    <li class="mb-3">Círculos de lectura</li>
+                    <li class="mb-3">Hora Spinout</li>
+                  </ul>
 
-                                        <button type="button" class="
+                  <button
+                    type="button"
+                    class="
                       mx-auto
                       d-block
                       btn btn-dark
@@ -631,208 +762,257 @@
                       boton-actividades
                       text-white
                       mt-5
-                    ">
+                    "
+                  >
                     Conoce el cronograma
                   </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="contenedor-aliados">
-                <div>
-                    <h3 class="text-yellow text-center mb-4">
-                        Lo que dicen nuestros aliados
-                    </h3>
                 </div>
-                <div class="d-flex justify-content-center container">
-                    <div class="row">
-                        <div class="text-center mt-4 text-yellow col-12 col-md-6 col-xl-3">
-                            <div class="
-  aliados-tarjeta
-  d-flex
-  flex-column
-  justify-content-between
-">
-                                <p class="persona-texto persona-texto--sedes mt-5 p-2">
-                                    SpinOut es una nueva energía que <br /> me ha ayudado a ver el entorno de <br /> una manera diferente. Representa un movimiento conformado por gente joven, creativa, libre y alegre que está transformando contextos a
-                                    través de la enseñanza de metodologías de reflexión y trabajo centrado en la persona.
-                                </p>
-                                <div>
-                                    <h4>Victor Freundt</h4>
-                                    <h5 class="font-weight-light font-italic">
-                                        Coordinator @ PromPerú Lab
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4 text-yellow col-12 col-md-6 col-xl-3">
-                            <div class="
-  aliados-tarjeta
-  d-flex
-  flex-column
-  justify-content-between
-">
-                                <p class="persona-texto persona-texto--sedes mt-5 p-2">
-                                    La entrega, la pasión y las ganas <br /> de forjar un país con gente de ideas <br /> innovadoras es lo que se denota <br /> desde el inicio de cualquier actividad <br /> de SpinOut, en donde todos son retados a salir
-                                    de su zona de confort y dar ideas. Fue increíble lo dinámica y fluida que fue toda la experiencia con la participación activa de nuestros becarios. En resumen fue un éxito tanto para nuestro grupo como para nuestra
-                                    organización, gracias
-                                    <br /> SpinOut.
-                                </p>
-                                <div>
-                                    <h4>Karina Rojas</h4>
-                                    <h5 class="font-weight-light font-italic">
-                                        Psicóloga @ Municipalidad <br /> Metropolitana de Lima
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4 text-yellow col-12 col-md-6 col-xl-3">
-                            <div class="
-  aliados-tarjeta
-  d-flex
-  flex-column
-  justify-content-between
-">
-                                <p class="persona-texto persona-texto--sedes mt-5 p-2">
-                                    SpinOut es un ecosistema de personas que desde sus inicios buscó aprender mucho del emprendimiento y generar un impacto positivo. Sin esperarlo, generaron un cambio que
-                                    <br /> no esperaban y sigue creciendo su impacto en cada persona o empresa que a su vez aprende de ellos. Sin lugar a duda, son una comunidad importante que debe existir en todas las instituciones educativas.
-                                </p>
-                                <div>
-                                    <h4>Alvaro Dasso</h4>
-                                    <h5 class="font-weight-light font-italic">
-                                        Co-Founder & CEO @ ID B. I.
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4 text-yellow col-12 col-md-6 col-xl-3">
-                            <div class="
-  aliados-tarjeta
-  d-flex
-  flex-column
-  justify-content-between
-">
-                                <p class="persona-texto persona-texto--sedes mt-5 p-2">
-                                    En ISE nos encontramos muy contentos con el trabajo que
-                                    <br /> relizamos con SpinOut. Ellos tienen una forma especial de compartir su conocimiento, y viven su propósito en cada una de sus acciones. Volveria a confiar en ellos para otros proyectos educativos, dado su alto
-                                    sentido de urgencia y responsabilidad para lograr resultados.
-                                </p>
-                                <div>
-                                    <h4>Carlos Homar Lozano Domínguez</h4>
-                                    <h5 class="font-weight-light font-italic">
-                                        CEO @ Innovación Social Empresarial
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <footer class="container">
+      </section>
+      <section>
+        <div class="container">
+          <div class="contenedor-aliados">
+            <div>
+              <h3 class="text-yellow text-center mb-4">
+                Lo que dicen nuestros aliados
+              </h3>
+            </div>
+            <div class="d-flex justify-content-center container">
+              <div class="row row-aliados">
+                <div
+                  class="text-center mt-4 text-yellow col-12 col-md-6 col-xl-3"
+                >
+                  <div
+                    class="
+                      aliados-tarjeta
+                      d-flex
+                      flex-column
+                      justify-content-between
+                    "
+                  >
+                    <p class="persona-texto persona-texto--sedes mt-5 p-2">
+                      SpinOut es una nueva energía que <br />
+                      me ha ayudado a ver el entorno de <br />
+                      una manera diferente. Representa un movimiento conformado
+                      por gente joven, creativa, libre y alegre que está
+                      transformando contextos a través de la enseñanza de
+                      metodologías de reflexión y trabajo centrado en la
+                      persona.
+                    </p>
+                    <div>
+                      <h4>Victor Freundt</h4>
+                      <h5 class="font-weight-light font-italic">
+                        Coordinator @ PromPerú Lab
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-center mt-4 text-yellow col-12 col-md-6 col-xl-3"
+                >
+                  <div
+                    class="
+                      aliados-tarjeta
+                      d-flex
+                      flex-column
+                      justify-content-between
+                    "
+                  >
+                    <p class="persona-texto persona-texto--sedes mt-5 p-2">
+                      La entrega, la pasión y las ganas <br />
+                      de forjar un país con gente de ideas <br />
+                      innovadoras es lo que se denota <br />
+                      desde el inicio de cualquier actividad <br />
+                      de SpinOut, en donde todos son retados a salir de su zona
+                      de confort y dar ideas. Fue increíble lo dinámica y fluida
+                      que fue toda la experiencia con la participación activa de
+                      nuestros becarios. En resumen fue un éxito tanto para
+                      nuestro grupo como para nuestra organización, gracias
+                      <br />
+                      SpinOut.
+                    </p>
+                    <div>
+                      <h4>Karina Rojas</h4>
+                      <h5 class="font-weight-light font-italic">
+                        Psicóloga @ Municipalidad <br />
+                        Metropolitana de Lima
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-center mt-4 text-yellow col-12 col-md-6 col-xl-3"
+                >
+                  <div
+                    class="
+                      aliados-tarjeta
+                      d-flex
+                      flex-column
+                      justify-content-between
+                    "
+                  >
+                    <p class="persona-texto persona-texto--sedes mt-5 p-2">
+                      SpinOut es un ecosistema de personas que desde sus inicios
+                      buscó aprender mucho del emprendimiento y generar un
+                      impacto positivo. Sin esperarlo, generaron un cambio que
+                      <br />
+                      no esperaban y sigue creciendo su impacto en cada persona
+                      o empresa que a su vez aprende de ellos. Sin lugar a duda,
+                      son una comunidad importante que debe existir en todas las
+                      instituciones educativas.
+                    </p>
+                    <div>
+                      <h4>Alvaro Dasso</h4>
+                      <h5 class="font-weight-light font-italic">
+                        Co-Founder & CEO @ ID B. I.
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-center mt-4 text-yellow col-12 col-md-6 col-xl-3"
+                >
+                  <div
+                    class="
+                      aliados-tarjeta
+                      d-flex
+                      flex-column
+                      justify-content-between
+                    "
+                  >
+                    <p class="persona-texto persona-texto--sedes mt-5 p-2">
+                      En ISE nos encontramos muy contentos con el trabajo que
+                      <br />
+                      relizamos con SpinOut. Ellos tienen una forma especial de
+                      compartir su conocimiento, y viven su propósito en cada
+                      una de sus acciones. Volveria a confiar en ellos para
+                      otros proyectos educativos, dado su alto sentido de
+                      urgencia y responsabilidad para lograr resultados.
+                    </p>
+                    <div>
+                      <h4>Carlos Homar Lozano Domínguez</h4>
+                      <h5 class="font-weight-light font-italic">
+                        CEO @ Innovación Social Empresarial
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="container">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 redes-sociales">
-                <p class="text-white newsletter">
-                    Suscribete a nuestro <br />Newsletter
-                </p>
-                <form>
-                    <input class="
+          <div class="col-12 col-md-6 col-lg-4 redes-sociales">
+            <p class="text-white newsletter">
+              Suscribete a nuestro <br />Newsletter
+            </p>
+            <form>
+              <input
+                class="
                   border-warning
                   btn-block
                   text-white
                   font-weight-normal
                   p-2
                   mt-5
-                " type="text" placeholder="Email" />
-                    <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn bg-warning font-weight-bolder text-black p-3 mt-5">
+                "
+                type="text"
+                placeholder="Email"
+              />
+              <div class="d-flex justify-content-center">
+                <button
+                  type="submit"
+                  class="btn bg-warning font-weight-bolder text-black p-3 mt-5"
+                >
                   Enviar
                 </button>
-                    </div>
-                </form>
-                <p class="text-warning font-weight-bold titulo text-center">
-                    Contáctanos
-                </p>
-                <div class="
+              </div>
+            </form>
+            <p class="text-warning font-weight-bold titulo text-center">
+              Contáctanos
+            </p>
+            <div
+              class="
                 d-flex
                 align-items-center
                 contactanos
                 text-yellow
                 justify-content-start
                 mt-5
-              ">
-                    <i class="fab fa-whatsapp"></i>
-                    <p class="contactanos-redes-texto ml-3">+51 953 410 446</p>
-                </div>
-                <div class="
+              "
+            >
+              <i class="fab fa-whatsapp"></i>
+              <p class="contactanos-redes-texto ml-3">+51 953 410 446</p>
+            </div>
+            <div
+              class="
                 d-flex
                 text-yellow
                 align-items-center
                 contactanos
                 justify-content-start
                 mt-3
-              ">
-                    <i class="far fa-envelope"></i>
-                    <p class="contactanos-redes-texto ml-3">spinoutworld@gmail.com</p>
-                </div>
-                <div class="
+              "
+            >
+              <i class="far fa-envelope"></i>
+              <p class="contactanos-redes-texto ml-3">spinoutworld@gmail.com</p>
+            </div>
+            <div
+              class="
                 iconos-redes
                 d-flex
                 justify-content-around
                 align-items-center
-              ">
-                    <a href="#" class="p-4">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="p-4" href="#">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a class="p-4" href="#">
-                        <i class="far fa-paper-plane"></i>
-                    </a>
-                    <a class="p-4" href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
+              "
+            >
+              <a href="#" class="p-4">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="p-4" href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a class="p-4" href="#">
+                <i class="far fa-paper-plane"></i>
+              </a>
+              <a class="p-4" href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
             </div>
-            <div class="col-12 col-md-6 col-lg d-flex flex-column align-items-center">
-                <ul class="list-unstyled footer-list">
-                    <li class="mt-0 font-weight-bold titulo mt-0">
-                        <p class="text-decoration-none text-warning">
-                            Nosotros <br /><br />
-                        </p>
-                    </li>
-                    <li class="mt-5">
-                        <a class="text-decoration-none text-white" href="#">Historia</a>
-                    </li>
-                    <li class="mt-5">
-                        <a class="text-decoration-none text-white" href="#">Equipo</a>
-                    </li>
-                    <li class="mt-5">
-                        <a class="text-decoration-none text-white" href="#">Alianzas</a>
-                    </li>
-                    <li class="mt-5">
-                        <a class="text-decoration-none text-white" href="#">Proyectos</a
-                >
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg d-flex flex-column align-items-center"
+          >
+            <ul class="list-unstyled footer-list">
+              <li class="mt-0 font-weight-bold titulo mt-0">
+                <p class="text-decoration-none text-warning">
+                  Nosotros <br /><br />
+                </p>
               </li>
               <li class="mt-5">
-                <a class="text-decoration-none text-white" href="#"
-                  >Asociación SO</a
-                >
+                <a class="text-decoration-none" href="#">Historia</a>
               </li>
               <li class="mt-5">
-                <a class="text-decoration-none text-white" href="#"
-                  >Notas de prensa</a
-                >
+                <a class="text-decoration-none" href="#">Equipo</a>
               </li>
               <li class="mt-5">
-                <a class="text-decoration-none text-white" href="#"
+                <a class="text-decoration-none" href="#">Alianzas</a>
+              </li>
+              <li class="mt-5">
+                <a class="text-decoration-none" href="#">Proyectos</a>
+              </li>
+              <li class="mt-5">
+                <a class="text-decoration-none" href="#">Asociación SO</a>
+              </li>
+              <li class="mt-5">
+                <a class="text-decoration-none" href="#">Notas de prensa</a>
+              </li>
+              <li class="mt-5">
+                <a class="text-decoration-none" href="#"
                   >Trabaja con <br />nosotros</a
                 >
               </li>
@@ -848,19 +1028,13 @@
                 </p>
               </li>
               <li class="mt-5">
-                <a class="text-decoration-none text-white" href="#"
-                  >Data Analytics</a
-                >
+                <a class="text-decoration-none" href="#">Data Analytics</a>
               </li>
               <li class="mt-5">
-                <a class="text-decoration-none text-white" href="#"
-                  >Product Manager</a
-                >
+                <a class="text-decoration-none" href="#">Product Manager</a>
               </li>
               <li class="mt-5">
-                <a class="text-decoration-none text-white" href="#"
-                  >Business builder</a
-                >
+                <a class="text-decoration-none" href="#">Business builder</a>
               </li>
             </ul>
           </div>
@@ -874,21 +1048,16 @@
                 </p>
               </li>
               <li class="mt-5">
-                <a class="text-decoration-none text-white" href="#"
-                  >Trabajos realizados</a
-                >
+                <a class="text-decoration-none" href="#">Trabajos realizados</a>
               </li>
               <li class="mt-5">
-                <a class="text-decoration-none text-white" href="#"
-                  >Portafolio</a
-                >
+                <a class="text-decoration-none" href="#">Portafolio</a>
               </li>
               <li class="mt-5">
-                <a class="text-decoration-none text-white" href="#">Staff</a>
-                    </li>
-                    <li class="mt-5">
-                        <a class="text-decoration-none text-white" href="#">Testimonios</a
-                >
+                <a class="text-decoration-none" href="#">Staff</a>
+              </li>
+              <li class="mt-5">
+                <a class="text-decoration-none" href="#">Testimonios</a>
               </li>
             </ul>
           </div>
