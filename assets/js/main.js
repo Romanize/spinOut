@@ -4,8 +4,8 @@
 const changeMindsetPhrases = () => {
     let i = 0;
     const mindsetPhrases = [
-        '"No existe innovación sin disciplina',
-        '"Vive plenamente consciente',
+        '"No existe innovación sin disciplina"',
+        '"Vive plenamente consciente"',
         '"Abraza la incertidumbre"',
         '"Tienes que hacer realidad tus ideas"',
         '"La empatía importa"',
@@ -85,7 +85,7 @@ setCarouselArrowsFunction();
     $.fn.countTo.defaults = {
         from: 0, // the number the element should start at
         to: 100, // the number the element should end at
-        speed: 1000, // how long it should take to count between the target numbers
+        speed: 1500, // how long it should take to count between the target numbers
         refreshInterval: 50, // how often the element should be updated
         decimals: 0, // the number of decimal places to show
         onUpdate: null, // callback method for every time the element is updated,
@@ -93,45 +93,62 @@ setCarouselArrowsFunction();
     };
 })(jQuery);
 
-//Call Counters
+//FUNCION PARA EJECUTAR EL CONTEO CUANDO SE HAGA SCROLL EN LA SECCION IMPACTO
 
-jQuery(function($) {
-    $(".numero-contador-header").countTo({
-        from: 0,
-        to: 420,
-    });
-});
-jQuery(function($) {
-    $("#104").countTo({
-        from: 0,
-        to: 104,
-    });
-});
+let S1 = $('section:eq(2)').offset().top + 200; //OBTENGO LA POSICION VERTICAL DE LA PRIMERA SECCION
+console.log(S1);
+let S2 = $('section:eq(4)').offset().top; //OBTENGO LA POSICION VERTICAL DE LA SEGUNDA SECCION
+console.log(S2);
 
-jQuery(function($) {
-    $("#148").countTo({
-        from: 0,
-        to: 148,
-    });
-});
-jQuery(function($) {
-    $("#112").countTo({
-        from: 0,
-        to: 112,
-    });
-});
-jQuery(function($) {
-    $("#76").countTo({
-        from: 0,
-        to: 76,
-    });
-});
-jQuery(function($) {
-    $("#16").countTo({
-        from: 0,
-        to: 16,
-    });
-});
+let bandera = 0;
+window.onscroll = function() {
+    //SI EL SCROLL ES MAYOR A LA SECCION NUMERO 1 Y MENOR A LA SECCION NUMERO 2, SE EJECUTA EL CODIGO
+    if ($(this).scrollTop() > S1 && $(this).scrollTop() < S2) {
+        if (bandera == 0) {
+            //Call Counters
+
+            $((function($) {
+                $(".numero-contador-header").countTo({
+                    from: 0,
+                    to: 420,
+                });
+            }));
+            $((function($) {
+                $("#104").countTo({
+                    from: 0,
+                    to: 104,
+                });
+            }));
+
+            $((function($) {
+                $("#148").countTo({
+                    from: 0,
+                    to: 148,
+                });
+            }));
+            $((function($) {
+                $("#112").countTo({
+                    from: 0,
+                    to: 112,
+                });
+            }));
+            $((function($) {
+                $("#76").countTo({
+                    from: 0,
+                    to: 76,
+                });
+            }));
+            $((function($) {
+                $("#16").countTo({
+                    from: 0,
+                    to: 16,
+                });
+            }));
+            bandera = 1;
+        }
+    }
+}
+
 
 //ALEPSO HOVER EVENT
 $(".bloque-alepso").hover(
