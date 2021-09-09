@@ -107,7 +107,13 @@ h3 {
 }
 
 /*NAVEGACION*/
+.navbar {
+  width: 100%;
+}
 
+.navbar-nav {
+  background-color: black;
+}
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
   color: rgba(255, 255, 255, 1);
@@ -567,31 +573,64 @@ h3 {
     ),
     url(../images/background/fondoSedes.png);
 }
+
 .mapa {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.mapa > .closed {
-  position: absolute;
-
-  transform: scale(0.3);
-}
-
 #mapa-peru {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: url(../images/sedes/zoomPeru.png);
+  width: 260px;
+  height: 350px;
+  flex-shrink: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
   position: relative;
-  margin: auto;
 }
 
-#mapa-peru > img {
-  width: 100%;
+#mapa-bolivia {
+  background: url(../images/sedes/zoomBolivia.png);
+  flex-shrink: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  bottom: 10px;
 }
 
-#mapa-peru > .mapa-pin {
+#mapa-peru > .pin-1 {
+  top: 95px;
+  left: 40px;
+}
+
+#mapa-peru > .pin-2 {
+  top: 165px;
+  left: 75px;
+}
+
+#mapa-peru > .pin-3 {
+  top: 200px;
+  left: 125px;
+}
+
+#mapa-peru > .pin-4 {
+  top: 220px;
+  left: 170px;
+}
+
+#mapa-peru > .pin-5 {
+  top: 260px;
+  left: 190px;
+}
+
+.mapa-pin {
   position: absolute;
   font-weight: 900;
   color: var(--color-yellow);
@@ -600,7 +639,12 @@ h3 {
   cursor: pointer;
 }
 
-.mapa-pin::after {
+.mapa-pin::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+}
+
+.mapa-pin-label::after {
   content: attr(data-number);
   border-radius: 50%;
   border: 2px solid black;
@@ -765,11 +809,51 @@ input[type="text"] {
   .actividades {
     padding: 2rem;
   }
+
+  #mapa-peru {
+    height: 600px;
+    width: 500px;
+  }
+
+  #mapa-bolivia {
+    width: 150px;
+    height: 150px;
+    bottom: 50px;
+    left: 30px;
+  }
+
+  #mapa-peru > .pin-1 {
+    top: 210px;
+    left: 110px;
+  }
+
+  #mapa-peru > .pin-2 {
+    top: 330px;
+    left: 170px;
+  }
+
+  #mapa-peru > .pin-3 {
+    top: 400px;
+    left: 260px;
+  }
+
+  #mapa-peru > .pin-4 {
+    top: 420px;
+    left: 330px;
+  }
+
+  #mapa-peru > .pin-5 {
+    top: 500px;
+    left: 370px;
+  }
 }
 
 /* MD BREAKDOWN */
 
 @media screen and (min-width: 768px) {
+  #mapa-bolivia {
+    bottom: 100px;
+  }
   .navbar a img {
     width: 200px;
   }

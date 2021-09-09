@@ -46,7 +46,7 @@
 
   <body class="bg-black">
     <div class="container-fluid full-wrapper">
-      <header>
+      <header class="row">
         <nav
           class="navbar navbar-expand-lg navbar-light justify-content-between"
         >
@@ -775,30 +775,21 @@
           </div>
           <div class="seccion-contenido container">
             <div class="row">
-              <div class="mapa col-12 col-lg-6 mb-5 mb-lg-0">
+              <div class="mapa col-12 col-lg-6 mb-5 mb-lg-0 p-0">
                 <div id="mapa-peru" class="text-center">
-                  <div
+                  <span
+                    class="mapa-pin pin-1 mapa-pin-label"
                     data-number="2"
-                    class="mapa-pin"
-                    style="bottom: 52%; left: 23%"
-                  >
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div
+                  ></span>
+                  <span
+                    class="mapa-pin pin-2 mapa-pin-label"
                     data-number="11"
-                    class="mapa-pin"
-                    style="bottom: 33%; left: 35%"
-                  >
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <img src="./assets/images/sedes/zoomPeru.png" alt="Perú" />
+                  ></span>
+                  <span class="mapa-pin pin-3"></span>
+                  <span class="mapa-pin pin-4"></span>
+                  <span class="mapa-pin pin-5"></span>
                 </div>
-                <div id="mapa-bolivia" class="text-center closed">
-                  <img
-                    src="./assets/images/sedes/zoomBolivia.png"
-                    alt="Bolivia"
-                  />
-                </div>
+                <div id="mapa-bolivia" class="text-center closed"></div>
               </div>
               <div
                 class="
