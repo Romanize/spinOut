@@ -108,11 +108,9 @@ h3 {
 .navbar {
   width: 100%;
   padding: 2rem;
+  background-color: #000000ee;
 }
 
-.navbar-nav {
-  background-color: #000000bd;
-}
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
   color: rgba(255, 255, 255, 1);
@@ -503,6 +501,11 @@ h3 {
   font-size: 2rem;
   margin: 0 auto;
 }
+.texto-tarjeta--small {
+  max-width: 460px;
+  font-size: 1.7rem;
+  margin: 0 auto;
+}
 
 .tarjeta-carousel-modelo h4 {
   font-size: 3rem;
@@ -619,12 +622,10 @@ h3 {
 #mapa-peru-trujillo > .pin-1 {
   top: 110px;
   left: 25px;
-  font-size: 2rem !important;
 }
 #mapa-peru-trujillo > .pin-2 {
   top: 105px;
   left: 50px;
-  font-size: 2rem !important;
 }
 
 #mapa-peru-lima {
@@ -991,6 +992,81 @@ input[type="text"] {
     top: 500px;
     left: 370px;
   }
+
+  #mapa-peru-trujillo {
+    height: 500px;
+    width: 400px;
+    top: initial;
+  }
+
+  #mapa-peru-trujillo > .pin-1 {
+    top: 190px;
+    left: 60px;
+  }
+
+  #mapa-peru-trujillo > .pin-2 {
+    top: 180px;
+    left: 90px;
+  }
+
+  #mapa-peru-lima {
+    height: 500px;
+    width: 400px;
+    top: initial;
+  }
+
+  #mapa-peru-lima > .mapa-pin {
+    font-size: 3rem;
+  }
+
+  #mapa-peru-lima > .pin-1 {
+    top: 100px;
+    left: 80px;
+  }
+
+  #mapa-peru-lima > .pin-2 {
+    top: 120px;
+    left: 95px;
+  }
+
+  #mapa-peru-lima > .pin-3 {
+    top: 225px;
+    left: 80px;
+  }
+
+  #mapa-peru-lima > .pin-4 {
+    top: 210px;
+    left: 95px;
+    z-index: 100;
+  }
+  #mapa-peru-lima > .pin-6 {
+    top: 185px;
+    left: 115px;
+  }
+  #mapa-peru-lima > .pin-7 {
+    top: 160px;
+    left: 130px;
+  }
+  #mapa-peru-lima > .pin-5 {
+    top: 260px;
+    left: 128px;
+  }
+  #mapa-peru-lima > .pin-8 {
+    top: 250px;
+    left: 147px;
+  }
+  #mapa-peru-lima > .pin-9 {
+    top: 220px;
+    left: 170px;
+  }
+  #mapa-peru-lima > .pin-10 {
+    top: 222px;
+    left: 190px;
+  }
+  #mapa-peru-lima > .pin-11 {
+    top: 180px;
+    left: 195px;
+  }
 }
 
 /* MD BREAKDOWN */
@@ -1179,7 +1255,7 @@ input[type="text"] {
 }
 
 #backToPeru {
-  background-color: black;
+  background-color: transparent;
   border: none;
   color: white;
   font-size: 2rem;

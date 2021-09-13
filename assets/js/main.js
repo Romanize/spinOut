@@ -32,13 +32,13 @@ const setCarouselArrowsFunction = () => {
 
   leftArrow.click(() => {
     const leftPosition = $(".carousel-tarjetas").scrollLeft();
-    $(".carousel-tarjetas").scrollLeft(leftPosition - 350);
+    $(".carousel-tarjetas").scrollLeft(leftPosition - 270);
   });
 
   rightArrow.click(() => {
     console.log("Click");
     const leftPosition = $(".carousel-tarjetas").scrollLeft();
-    $(".carousel-tarjetas").scrollLeft(leftPosition + 350);
+    $(".carousel-tarjetas").scrollLeft(leftPosition + 270);
   });
 };
 
@@ -172,7 +172,8 @@ $(".mapa-pin:not(.mapa-pin-label)").mouseenter((e) => {
   let y = e.pageY - 10;
 
   //mobile
-  if (e.target.parentElement.offsetWidth < 300) x = 35;
+  if (e.target.parentElement.offsetWidth < 300)
+    x = document.body.offsetWidth / 2 - 125;
 
   const { title, location, name, role, email, img } = JSON.parse(
     e.target.dataset.options
