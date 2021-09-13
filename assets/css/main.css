@@ -498,14 +498,16 @@ h3 {
 }
 
 .texto-tarjeta--modelo {
-  width: 460px;
+  max-width: 460px;
   font-size: 2rem;
+  width: 100%;
   margin: 0 auto;
 }
 .texto-tarjeta--small {
-  width: 460px;
+  max-width: 460px;
   font-size: 1.7rem;
   margin: 0 auto;
+  width: 100%;
 }
 
 .tarjeta-carousel-modelo h4 {
