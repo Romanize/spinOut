@@ -167,6 +167,65 @@ $(".bloque--so-wrapper").hover(
   }
 );
 
-$(".mapa-pin:not(.mapa-pin-label)").on("mouseover", (e) => console.log(e));
+$(".mapa-pin:not(.mapa-pin-label)").mouseenter((e) => {
+  let x = e.pageX - 10;
+  let y = e.pageY - 10;
 
-$(".mapa .closed").on("click", (e) => console.log(e));
+  //mobile
+  if (e.target.parentElement.offsetWidth < 300) x = 35;
+
+  const { title, location, name, role, email, img } = JSON.parse(
+    e.target.dataset.options
+  );
+  const content = `
+    <div class="tooltip-header">
+      <p>${title}</p>
+      <span>${location}</span>
+    </div>
+    <div class="tooltip-content d-flex align-items-center">
+      <img src="${img}"" alt="${name}" />
+      <div>
+        <p>${name}</p>
+        <span>${role}</span><br>
+        <a href="mailto: ${email}">${email}</a>
+      </div>
+    </div>
+    `;
+  $("#tooltip")
+    .html(content)
+    .css("top", `${y}px`)
+    .css("left", `${x}px`)
+    .css("opacity", "1")
+    .css("pointer-events", "all");
+});
+
+//hide tooltip
+$("#tooltip").mouseleave((e) => {
+  $("#tooltip").css("pointer-events", "none").text("").css("opacity", "0");
+});
+
+$("#mapa-bolivia").on("click", () => {
+  $("#mapa-bolivia").removeClass("closed");
+  $("#mapa-peru").addClass("closed");
+});
+
+$("#mapa-peru").on("click", () => {
+  $("#mapa-peru").removeClass("closed");
+  $("#mapa-bolivia").addClass("closed");
+});
+
+$(".mapa-pin-label").on("click", (e) => {
+  $(e.target.dataset.target).removeClass("hidden").addClass("shown");
+  $(e.target.parentElement).addClass("hidden");
+  $(".closed").addClass("hidden");
+  $("#backToPeru").addClass("d-block");
+});
+
+$("#backToPeru").on("click", () => {
+  $("#backToPeru").removeClass("d-block");
+  $("#mapa-peru").removeClass("hidden");
+  $(".closed").removeClass("hidden");
+  $(".shown").removeClass("shown").addClass("hidden");
+});
+
+//data-options='{"name":"Yesi Glecely Cutipa Carita","title":"Universidad Nacional Jorge Basadre Grohmann","location":"Tacna","role":"Coordinadora SpinOut UNJBG","email":"unjbg.spinout@gmail.com", "img":"assets/images/people/Yesi_tooltip.jpeg"}'

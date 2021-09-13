@@ -590,6 +590,109 @@ h3 {
   background-repeat: no-repeat;
   margin: 0 auto;
   position: relative;
+  transition: opacity 0.6s linear;
+}
+
+#mapa-peru-trujillo {
+  background: url(../images/sedes/zoomTrujillo.png);
+  width: 260px;
+  height: 350px;
+  flex-shrink: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%);
+  transition: opacity 0.6s linear;
+  position: absolute;
+}
+
+#mapa-peru-trujillo > .pin-1 {
+  top: 110px;
+  left: 25px;
+  font-size: 2rem !important;
+}
+#mapa-peru-trujillo > .pin-2 {
+  top: 105px;
+  left: 50px;
+  font-size: 2rem !important;
+}
+
+#mapa-peru-lima {
+  background: url(../images/sedes/zoomLima.png);
+  width: 200px;
+  height: 350px;
+  flex-shrink: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: opacity 0.6s linear;
+  position: absolute;
+}
+
+#mapa-peru-lima > .pin-1 {
+  top: 75px;
+  left: 20px;
+}
+
+#mapa-peru-lima > .pin-2 {
+  top: 90px;
+  left: 30px;
+}
+
+#mapa-peru-lima > .pin-3 {
+  top: 155px;
+  left: 25px;
+}
+
+#mapa-peru-lima > .pin-4 {
+  top: 150px;
+  left: 35px;
+}
+
+#mapa-peru-lima > .pin-5 {
+  top: 177px;
+  left: 52px;
+}
+
+#mapa-peru-lima > .pin-6 {
+  top: 130px;
+  left: 45px;
+}
+
+#mapa-peru-lima > .pin-7 {
+  top: 115px;
+  left: 55px;
+}
+
+#mapa-peru-lima > .pin-8 {
+  top: 170px;
+  left: 65px;
+}
+
+#mapa-peru-lima > .pin-9 {
+  top: 150px;
+  left: 80px;
+}
+
+#mapa-peru-lima > .pin-10 {
+  top: 150px;
+  left: 90px;
+}
+
+#mapa-peru-lima > .pin-11 {
+  top: 125px;
+  left: 95px;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 #mapa-bolivia {
@@ -598,11 +701,30 @@ h3 {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
+  width: 170px;
+  height: 350px;
+  margin: 0 auto;
+  transform: translateX(20px);
+}
+
+#mapa-bolivia > .pin-1 {
+  top: 115px;
+  left: 5px;
+}
+
+.mapa .closed {
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  position: absolute !important;
+  width: 80px !important;
+  height: 80px !important;
   bottom: 10px;
+  z-index: 100;
+  left: calc(50% - 130px);
+}
+
+.closed > * {
+  display: none;
 }
 
 #mapa-peru > .pin-1 {
@@ -637,6 +759,10 @@ h3 {
   padding: 0.5rem;
   font-size: 4rem;
   cursor: pointer;
+}
+
+#mapa-peru-lima > .mapa-pin {
+  font-size: 2rem;
 }
 
 .mapa-pin::before {
@@ -773,6 +899,7 @@ input[type="text"] {
   font-size: 1.6rem;
   font-weight: 400;
   margin-bottom: 0;
+  color: var(--color-yellow);
 }
 
 .iconos-redes > a {
@@ -816,10 +943,20 @@ input[type="text"] {
   }
 
   #mapa-bolivia {
-    width: 150px;
-    height: 150px;
-    bottom: 50px;
-    left: 30px;
+    height: 600px;
+    width: 300px;
+  }
+
+  #mapa-bolivia > .pin-1 {
+    top: 240px;
+    left: 15px;
+  }
+
+  .mapa .closed {
+    width: 150px !important;
+    height: 150px !important;
+    left: calc(50% - 10px);
+    bottom: 40px;
   }
 
   #mapa-peru > .pin-1 {
@@ -851,9 +988,11 @@ input[type="text"] {
 /* MD BREAKDOWN */
 
 @media screen and (min-width: 768px) {
-  #mapa-bolivia {
-    bottom: 100px;
+  .mapa .closed {
+    left: calc(50% - 250px);
+    bottom: 50px;
   }
+
   .navbar a img {
     width: 200px;
   }
@@ -951,6 +1090,11 @@ input[type="text"] {
 /* LG BREAKDOWN */
 
 @media screen and (min-width: 992px) {
+  .mapa .closed {
+    left: calc(50% - 250px);
+    bottom: 100px;
+  }
+
   .seccion-titulo {
     font-size: 5rem;
   }
@@ -968,4 +1112,58 @@ input[type="text"] {
   .linea-borde {
     border-right: 2px solid var(--color-yellow);
   }
+}
+
+.pinTooltip {
+  background-color: var(--color-yellow);
+  width: 250px;
+  position: absolute;
+  padding: 1rem;
+  box-shadow: 11px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s linear;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.tooltip-header {
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+}
+.tooltip-header p,
+.tooltip-content p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.tooltip-content > div {
+  padding: 1rem 0;
+}
+.tooltip-content img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+.tooltip-content span,
+.tooltip-content a,
+.tooltip-header span {
+  font-size: 10px;
+}
+.tooltip-content a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#backToPeru {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  display: none;
+  z-index: 500;
+}
+
+#backToPeru i {
+  margin-right: 1rem;
 }

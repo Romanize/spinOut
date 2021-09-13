@@ -44,7 +44,7 @@
     />
   </head>
 
-  <body class="bg-black">
+  <body class="bg-black position-relative">
     <div class="container-fluid full-wrapper">
       <header class="row">
         <nav
@@ -776,20 +776,99 @@
           <div class="seccion-contenido container">
             <div class="row">
               <div class="mapa col-12 col-lg-6 mb-5 mb-lg-0 p-0">
+                <button
+                  id="backToPeru"
+                  class="position-absolute"
+                  style="top: 0; left: 0"
+                >
+                  <i class="fas fa-chevron-left"></i> VOLVER
+                </button>
                 <div id="mapa-peru" class="text-center">
                   <span
                     class="mapa-pin pin-1 mapa-pin-label"
                     data-number="2"
+                    data-target="#mapa-peru-trujillo"
                   ></span>
                   <span
                     class="mapa-pin pin-2 mapa-pin-label"
                     data-number="11"
+                    data-target="#mapa-peru-lima"
                   ></span>
-                  <span class="mapa-pin pin-3"></span>
-                  <span class="mapa-pin pin-4"></span>
-                  <span class="mapa-pin pin-5"></span>
+                  <span
+                    class="mapa-pin pin-3"
+                    data-options='{"name":"Sihomara Sandy Ochoa Cisneros","title":"Universidad Nacional de San Cristóbal de Huamanga","location":"Ayacucho","role":"Coordinadora SpinOut UNSCH","email":"unsch.spinout@gmail.com", "img":"assets/images/people/Sihomara_tooltip.jpeg"}'
+                  ></span>
+                  <span
+                    class="mapa-pin pin-4"
+                    data-options='{"name":"Diana Paredes Zuloaga","title":"Universidad Nacional San Antonio Abad Del Cusco","location":"Cusco","role":"Coordinadora SpinOut UNSAAC","email":"unsaac.spinout@gmail.com", "img":"assets/images/people/Diana_tooltip.jpeg"}'
+                  ></span>
+                  <span
+                    class="mapa-pin pin-5"
+                    data-options='{"name":"Yesi Glecely Cutipa Carita","title":"Universidad Nacional Jorge Basadre Grohmann","location":"Tacna","role":"Coordinadora SpinOut UNJBG","email":"unjbg.spinout@gmail.com", "img":"assets/images/people/Yesi_tooltip.jpeg"}'
+                  ></span>
                 </div>
-                <div id="mapa-bolivia" class="text-center closed"></div>
+                <div id="mapa-bolivia" class="text-center closed">
+                  <span
+                    class="mapa-pin pin-1"
+                    data-options='{"name":"Ana Karen Calamani Flores Bolivia","title":"Universidad Pública De El Alto","location":"El Alto","role":"Coordinadora SpinOut UPEA","email":"spinout.bo@gmail.com", "img":"assets/images/people/AnaKaren_tooltip.jpg"}'
+                  ></span>
+                </div>
+                <div id="mapa-peru-trujillo" class="text-center hidden">
+                  <span
+                    class="mapa-pin pin-1"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span>
+                  <span
+                    class="mapa-pin pin-2"
+                    data-options='{"name":"Piero Gavelan","title":"Universidad Privada Del Norte","location":"Trujillo","role":"Coordinador SpinOut UPN","email":"upntrujillospinout@gmail.com", "img":"assets/images/people/Piero_card.jpg"}'
+                  ></span>
+                </div>
+                <div id="mapa-peru-lima" class="text-center hidden">
+                  <span
+                    class="mapa-pin pin-1"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span
+                  ><span
+                    class="mapa-pin pin-2"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span
+                  ><span
+                    class="mapa-pin pin-3"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span
+                  ><span
+                    class="mapa-pin pin-4"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span
+                  ><span
+                    class="mapa-pin pin-5"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span
+                  ><span
+                    class="mapa-pin pin-6"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span
+                  ><span
+                    class="mapa-pin pin-7"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span
+                  ><span
+                    class="mapa-pin pin-8"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span
+                  ><span
+                    class="mapa-pin pin-9"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span
+                  ><span
+                    class="mapa-pin pin-10"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span
+                  ><span
+                    class="mapa-pin pin-11"
+                    data-options='{"name":"Victor Gallo","title":"Universidad Nacional De Trujillo","location":"Trujillo","role":"Coordinador SpinOut UNT","email":"unt.spinout@gmail.com", "img":"assets/images/people/Victor_tooltip.jpg"}'
+                  ></span>
+                </div>
               </div>
               <div
                 class="
@@ -1028,7 +1107,11 @@
               "
             >
               <i class="far fa-envelope"></i>
-              <p class="contactanos-redes-texto ml-3">hola@spinoutworld.org</p>
+              <a
+                href="mailto:hola@spinoutworld.org"
+                class="contactanos-redes-texto ml-3"
+                >hola@spinoutworld.org</a
+              >
             </div>
             <div
               class="
@@ -1133,6 +1216,7 @@
         </div>
       </footer>
     </div>
+    <div id="tooltip" class="pinTooltip"></div>
 
     <script
       src="https://kit.fontawesome.com/021492e5b9.js"
