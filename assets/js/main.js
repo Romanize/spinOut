@@ -31,14 +31,29 @@ const setCarouselArrowsFunction = () => {
   const rightArrow = $(".carousel-right");
 
   leftArrow.click(() => {
-    const leftPosition = $(".carousel-tarjetas").scrollLeft();
-    $(".carousel-tarjetas").scrollLeft(leftPosition - 270);
+    $(".carousel-tarjetas").animate({ scrollLeft: "-=270" });
   });
 
   rightArrow.click(() => {
     console.log("Click");
-    const leftPosition = $(".carousel-tarjetas").scrollLeft();
-    $(".carousel-tarjetas").scrollLeft(leftPosition + 270);
+    $(".carousel-tarjetas").animate({ scrollLeft: "+=270" });
+  });
+
+  const fundamentosCard = $(".boton-fundamentos");
+
+  fundamentosCard.click((e) => {
+    e.preventDefault();
+    const parent = e.currentTarget.parentElement.parentElement;
+    const actualScroll = $(".carousel-modelo").scrollLeft();
+
+    if (e.currentTarget === document.getElementById("last-button")) {
+      $(".carousel-modelo").animate({ scrollLeft: 0 });
+    } else {
+      // $('.carousel-modelo').scrollLeft(actualScroll + parent.offsetWidth + 200);
+      $(".carousel-modelo").animate({
+        scrollLeft: `+=${parent.offsetWidth + 200}`,
+      });
+    }
   });
 };
 
@@ -230,3 +245,9 @@ $("#backToPeru").on("click", () => {
 });
 
 //data-options='{"name":"Yesi Glecely Cutipa Carita","title":"Universidad Nacional Jorge Basadre Grohmann","location":"Tacna","role":"Coordinadora SpinOut UNJBG","email":"unjbg.spinout@gmail.com", "img":"assets/images/people/Yesi_tooltip.jpeg"}'
+
+$(".nav-link").click((e) => {
+  e.preventDefault();
+  const scroll = $(e.target.hash)[0].offsetTop;
+  $("html").animate({ scrollTop: scroll });
+});
