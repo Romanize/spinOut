@@ -498,12 +498,12 @@ h3 {
 }
 
 .texto-tarjeta--modelo {
-  max-width: 460px;
+  width: 460px;
   font-size: 2rem;
   margin: 0 auto;
 }
 .texto-tarjeta--small {
-  max-width: 460px;
+  width: 460px;
   font-size: 1.7rem;
   margin: 0 auto;
 }
@@ -1197,6 +1197,7 @@ input[type="text"] {
   .tarjeta-carousel-modelo h4 {
     font-size: 3rem;
     font-weight: 400;
+    margin-top: 80px;
   }
   .numero-contador-header {
     font-size: 13rem;

@@ -35,7 +35,6 @@ const setCarouselArrowsFunction = () => {
   });
 
   rightArrow.click(() => {
-    console.log("Click");
     $(".carousel-tarjetas").animate({ scrollLeft: "+=270" });
   });
 
@@ -124,7 +123,7 @@ window.onscroll = function () {
       $(function ($) {
         $(".numero-contador-header").countTo({
           from: 0,
-          to: 420,
+          to: 330,
         });
       });
       $(function ($) {
@@ -249,5 +248,5 @@ $("#backToPeru").on("click", () => {
 $(".nav-link").click((e) => {
   e.preventDefault();
   const scroll = $(e.target.hash)[0].offsetTop;
-  $("html").animate({ scrollTop: scroll });
+  $("html").animate({ scrollTop: scroll - 120 });
 });
